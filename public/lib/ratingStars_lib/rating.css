@@ -1,0 +1,19 @@
+.star {
+    background-image: url(./ratingStars.PNG);
+    width: 28px;
+    height: 27px;
+    background-size: 100px;
+}
+.halfStar {
+    background-position: -36px 28px;
+}
+.emptyStar {
+    background-position: -72px 2px;
+}
+.starContainer > div {
+    float: left;
+}
+
+.starContainer {
+    display: flex;
+}

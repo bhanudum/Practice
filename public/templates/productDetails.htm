@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-2">
+        <div>
+            <div id="selectedPrice"></div>
+            <input type="range" min="100" max="10000" onchange="setPriceRange()" id="priceRangeBar" step="100">
+        </div>
+        <div id="categoryList">
+
+        </div>
+        <div>
+            <button class="btn btn-primary" onclick="applyFilter()">
+                Apply Filter
+            </button>
+        </div>
+    </div>
+    <div class="col-md-9" id="productDetailsContainer" >
+
+    </div>
+</div>
