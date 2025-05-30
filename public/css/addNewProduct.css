@@ -1,6 +1,6 @@
 
 
-.addNewProductDetails {
+/* .addNewProductDetails {
     ul {
         margin: 20px auto;
         padding: 10px;
@@ -17,5 +17,90 @@
         font-weight: bold;
         text-align: center;
 
+    }
+} */
+
+.addNewProductDetails {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #dce495;
+    border-color: #007bff solid 2px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addNewProductDetails ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.addNewProductDetails li {
+    margin-bottom: 20px;
+}
+
+.addNewProductDetails li.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.addNewProductDetails input.form-control {
+    height: 45px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.addNewProductDetails input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.addNewProductDetails input[type="button"] {
+    width: 48%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.addNewProductDetails input.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.addNewProductDetails input.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-left: 4%;
+}
+
+.addNewProductDetails li:last-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.addNewProductDetails input[type="button"] {
+    flex: 1;
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .addNewProductDetails input[type="button"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .addNewProductDetails input.btn-success {
+        margin-left: 0;
     }
 }

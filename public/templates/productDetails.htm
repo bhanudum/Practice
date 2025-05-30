@@ -1,19 +1,68 @@
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-2 FilterContainer">
         <div>
-            <div id="selectedPrice"></div>
-            <input type="range" min="100" max="10000" onchange="setPriceRange()" id="priceRangeBar" step="100">
-        </div>
-        <div id="categoryList">
+            <span class="filterTitle ">Filter</span>
 
+            </br>
+            <span> Price Range Rs.: <span id="selectedPrice"></span> </span>
+
+            <input type="range" min="100" max="10000" onchange="setPriceRange()" id="priceRangeBar" step="100" ></span>
         </div>
-        <div>
+
+
+
+
+
+        <div id="categoryList" class="category-list">
+
             <button class="btn btn-primary" onclick="applyFilter()">
                 Apply Filter
             </button>
+
+            <button class="btn btn-secondary" onclick="clearFilter()">
+                Clear Filter </button>
+
+            <button class="AddProduct" onclick="location.href='addNewProduct.html'">
+                Add New Product
+            </button>
         </div>
-    </div>
-    <div class="col-md-9" id="productDetailsContainer" >
+
+        <div class="sorting">
+            <div class="d-flex justify-content-start align-items-center flex-wrap sort-section">
+                <div class="me-3">
+                    <label for="sortTitle" class="form-label fw-bold">Sort by Title:</label>
+                    <select class="form-select" id="sortTitle" onchange="sortByTitle(this.value)">
+                        <option value="">-- Select --</option>
+                        <option value="asc"> Assending A → Z</option>
+                        <option value="desc">Desending Z → A</option>
+                    </select>
+                </div>
+                
+                <div class="me-3">
+                    <label for="sortPrice" class="form-label fw-bold">Sort by Price:</label>
+                    <select class="form-select" id="sortPrice" onchange="sortByPrice(this.value)">
+                        <option value="">-- Select Price--</option>
+                        <option value="lowHigh">Low → High</option>
+                        <option value="highLow">High → Low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
 
     </div>
+
+<p class="fw-bold">Total Products: <span id="totalProducts"> </span></p>
+
+
+
+
+
+    <div class="col-md-9" id="productDetailsContainer">
+        
+
+
+    </div>
+    
 </div>
+

@@ -40,7 +40,7 @@
                     </ul>
 
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 ">
-                        <input type="search" class="form-control form-control-dark search1" placeholder="Search..."
+                        <input type="search" id="search" class="form-control form-control-dark search1" placeholder="Search..."
                             aria-label="Search">
                     </form>
 
@@ -170,7 +170,7 @@
                                 placeholder="Account Password">
                         </li>
                         <li>
-                            <input type="checkbox" id="rememberMeCheckbox" checked> Remember My Credentials
+                            <input type="checkbox" id="rememberMeCheckbox" checked> Save My Credentials
                         </li>
                         <li class="row">
                             <div class="captchaBlock col"></div>
@@ -180,13 +180,20 @@
                             <input id="captchaText" type="text" class="form-control" placeholder="Enter Captcha">
                         </li>
                         <li>
-                            <a class="alert-link" href="#" onclick="showSignupModal()">
-                                New user signup ?
+                            <a class="alert-link newusersignupinlogin" href="#" onclick="showSignupModal()">
+                                Don't have an account? Sign up  
                             </a>
                         </li>
-                        <li id="statusMsg">
+                        <li id="statusMsg" class="text-danger" style="display: none;">
+                            
+                            
 
                         </li>
+                        <li id="statusMsg1" class="text-success" style="display: none;">
+                           
+
+                        </li>
+
                     </ul>
                 </div>
                 <div class="modal-footer">

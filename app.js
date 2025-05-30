@@ -19,7 +19,14 @@ var addNewProductRouter = require("./routes/addNewProducDetails");
 
 var app = express();
 
-app.use(session({secret: process.env.SESSION_SECRET_KEY, cookie: { maxAge: 60000 }}));
+app.use(session({
+  secret: process.env.SESSION_SECRET_KEY,
+  resave: false,               
+  saveUninitialized: false,    
+  cookie: { maxAge: 60000 }
+}));
+
+// app.use(session({secret: process.env.SESSION_SECRET_KEY, cookie: { maxAge: 60000 }}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

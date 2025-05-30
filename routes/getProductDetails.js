@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
                 res.send(JSON.stringify(productDetails));
             });
         } else { // invalid user with invalid token
-            res.send(JSON.stringify({'msg': 'Unauthorized user'}));
+            res.send(JSON.stringify({'msg': 'Unauthorized user________________'}));
         }
     });    
 });

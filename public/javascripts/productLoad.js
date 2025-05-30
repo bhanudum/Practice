@@ -1,63 +1,138 @@
-
-
 var singleProductTemplate;
+var allProducts = [];
+var jwtToken = localStorage.getItem("jwtToken"); // Adjust if you use another method
 
+// Load and compile Handlebars template
 axios.get('templates/singleProductTmplt.htm').then((response) => {
     singleProductTemplate = Handlebars.compile(response.data);
-})
+});
 
+// Reusable function to render product cards
+var renderProducts = (products) => {
+    $("#productDetailsContainer").html('');
+    console.log(products.length + " products found");
+     $("#totalProducts").text(products.length);
+    products.forEach((product, index) => {
+        product.title = product.title.substr(0, 50);
+        product.description = product.description.substr(0, 85) + '...';
+        product.index = index;
+
+        $("#productDetailsContainer").append(singleProductTemplate(product));
+
+        var ratingContainer = `#rating_${index}`;
+        addRatingStarsToContainer(product.rating.rate, ratingContainer);
+    });
+};
+
+// Load products from backend
 var loadProductsToPage = (userQuery = {}) => {
     $("#productDetailsContainer").html('');
 
-    axios.post('/get/productDetails', userQuery, { headers: {"Authorization" : `Bearer ${jwtToken}`} }).then((result) => {
+    axios.post('/get/productDetails', userQuery, {
+        headers: { "Authorization": `Bearer ${jwtToken}` }
+    }).then((result) => {
         console.log(result.data);
-        var productData = result.data;
-        productData.forEach((product, index) => {
-            product.title = product.title.substr(0, 50);
-            product.description = product.description.substr( 0, 85) + '...';
-            product.index = index;
-            console.log(product.description);
-
-            $("#productDetailsContainer").append(singleProductTemplate(product));
-
-            var ratingContainer = `#rating_${index}`;
-            addRatingStarsToContainer(product.rating.rate, ratingContainer);
-        });
+        allProducts = result.data;
+        renderProducts(allProducts);
     }).catch((err) => {
-        
+        console.error("Failed to load products", err);
     });
-}   
-var setPriceRange = () => {
-    $("#selectedPrice").text($("#priceRangeBar").val())
-}
+};
 
+// Filter: Price range
+var setPriceRange = () => {
+    $("#selectedPrice").text($("#priceRangeBar").val());
+};
+
+// Filter: Category + Price
 var applyFilter = () => {
     var userQuery = {};
     userQuery.priceRange = $("#priceRangeBar").val();
     userQuery.categoryList = [];
+
     var selectedCategory = document.querySelectorAll("#categoryList input:checked");
     selectedCategory.forEach((element) => {
         userQuery.categoryList.push(element.value);
     });
+
     loadProductsToPage(userQuery);
-}
+};
 
+var clearFilter = () => {
+    
+    // Reset price range to minimum
+    $("#priceRangeBar").val(100);
+    $("#selectedPrice").text(100);
+
+    // Uncheck all category checkboxes
+    $("#categoryList input[type='checkbox']").prop('checked', false);
+
+    // Clear the search input
+    $("#search").val("");
+
+    // Reload all products
+    loadProductsToPage({});
+};
+// Load category filter checkboxes
 var fillCategoryListUnderFilter = () => {
-    var categoryList = [];
     axios.get('/category/list').then((response) => {
-        categoryList = response.data;
+        var categoryList = response.data;
         categoryList.forEach((category) => {
-            var divTag = $("<div/>");
-            var checkbox = $('<input type="checkbox" value="' + category + '"/>');
-            divTag.text(category).append(checkbox);
-            
-            $("#categoryList").append(divTag)
+            var divTag = $("<div/>").addClass("form-check");
+            var checkbox = $(`<input type="checkbox" value="${category}" class="form-check-input"/>`);
+            var label = $(`<label class="form-check-label">${category}</label>`);
+            divTag.append(checkbox).append(label);
+
+            $("#categoryList").append(divTag);
         });
-    })
+    }).catch((err) => {
+        console.error("Failed to load categories", err);
+    });
+};
 
-    
+// Sort by Title
+var sortByTitle = (order) => {
+    if (!order || !allProducts) return;
 
-    console.log($("#categoryList"));
-    
-}
+    allProducts.sort((a, b) => {
+        const titleA = a.title.toUpperCase();
+        const titleB = b.title.toUpperCase();
+        return order === 'asc' ? titleA.localeCompare(titleB) : titleB.localeCompare(titleA);
+    });
+
+    renderProducts(allProducts);
+};
+
+// Sort by Price
+var sortByPrice = (order) => {
+    if (!order || !allProducts) return;
+
+    allProducts.sort((a, b) => {
+        return order === 'lowHigh' ? a.price - b.price : b.price - a.price;
+    });
+
+    renderProducts(allProducts);
+};
+
+// Optionally call on page load
+$(document).ready(() => {
+    fillCategoryListUnderFilter();
+    loadProductsToPage();
+});
+
+$("#search").on("keyup", function () {
+    const keyword = $(this).val().trim().toLowerCase();
+    // If keyword is less than 3 characters, do not filtercon
+    console.log("Search keyword:", keyword);
+    if (keyword.length >= 3) {
+        const filtered = allProducts.filter(product =>
+            product.title.toLowerCase().includes(keyword)
+        );
+        renderProducts(filtered);
+    } else if (keyword.length === 0) {
+        renderProducts(allProducts);
+    }
+});
+
+
 
