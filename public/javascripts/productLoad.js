@@ -12,8 +12,12 @@ var renderProducts = (products) => {
     $("#productDetailsContainer").html('');
     console.log(products.length + " products found");
      $("#totalProducts").text(products.length);
+     const totalPrice = products.reduce((sum, p) => sum + p.price, 0).toFixed(2);
+     $("#totalPrice").text(totalPrice);
     products.forEach((product, index) => {
         product.title = product.title.substr(0, 50);
+        product.category=product.category.substr(0, 20);
+        product.category = product.category.charAt(0).toUpperCase() + product.category.slice(1);
         product.description = product.description.substr(0, 85) + '...';
         product.index = index;
 

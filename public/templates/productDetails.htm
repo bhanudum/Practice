@@ -1,12 +1,12 @@
-<div class="row">
-    <div class="col-md-2 FilterContainer">
+<div class="main-wrapper" id="productDetailsContainerRow">
+    <div class="FilterContainer">
         <div>
             <span class="filterTitle ">Filter</span>
 
             </br>
             <span> Price Range Rs.: <span id="selectedPrice"></span> </span>
 
-            <input type="range" min="100" max="10000" onchange="setPriceRange()" id="priceRangeBar" step="100" ></span>
+            <input type="range" min="100" max="1000" onchange="setPriceRange()" id="priceRangeBar" step="100" ></span>
         </div>
 
 
@@ -49,16 +49,20 @@
             </div>
         </div>
 
-
+        <p class="fw-bold">Total Products: <span id="totalProducts"> </span></p>
+        <p class="fw-bold">Total Price ₹ <span id="totalPrice"> </span></p>
+       
     </div>
 
-<p class="fw-bold">Total Products: <span id="totalProducts"> </span></p>
 
 
 
 
 
-    <div class="col-md-9" id="productDetailsContainer">
+    <div class="FilterContainer1" id="productDetailsContainer" width="70%">
+        <div class="row" id="productDetailsRow1">
+            <!-- Product details will be dynamically inserted here -->
+        </div>
         
 
 
