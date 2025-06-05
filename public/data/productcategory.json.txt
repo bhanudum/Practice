@@ -1,0 +1,27 @@
+{
+  "_id": {
+    "$oid": "683980e9408051df7ea4fc95"
+  },
+  "categories": [
+    "electronics",
+    "jewelery",
+    "men's clothing",
+    "women's clothing",
+    "home needs",
+    "bikes",
+    "bags",
+    "cars",
+    "food",
+    "books",
+    "toys",
+    "beauty",
+    "sports",
+    "furniture",
+    "stationery",
+    "gardening",
+    "pets",
+    "b5",
+    "mobile accessories",
+    "kitchen appliances",
+    "gaming"
+  ]
