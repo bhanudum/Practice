@@ -19,14 +19,14 @@
     font-size: 20px;
     width: 150px;
     padding: 20px;
-    border: 2px solid red;
+    border: 2px solid rgb(161, 169, 240);
 }
 
 #productDetailsContainer {
     display: flex;
     flex-wrap: wrap;
     img {
-        width: 100%;
+        width: 90%;
         margin: 5px;
         height: 150px
     }
@@ -54,18 +54,23 @@
     } */
 }
 .header1{
-    background-image: linear-gradient(to right, #ff925f, #341aa8, #67e467, #e63fca);
+    background-image: linear-gradient(to right, #ff925f, #341aa8, white,#97df97, #e63fca);
 }
+
 .footer1{
-    background-image: linear-gradient(to right, #2fd4cc,  #f37c4d);
+    background-image: linear-gradient(to right, rgb(224, 150, 224),#2fd4cc, rgb(149, 230, 149), #f37c4d, white,rgb(209, 136, 209));
     
+}
+.modal-content{
+    background-image: linear-gradient(to left, #f3caf0, white ,#ececad, #f1f1c4, white, #d2f7f7); 
+
 }
 
 .search1{   
-    background-image: linear-gradient(to left, #e7e2df, white ,#7e7e76, #94af94, white, #777336); 
+    background-image: linear-gradient(to left, #f0bded, white ,#f1f19f, #a9e7a9, white, #ece9e4); 
     
    
-   border-color: rgb(243, 230, 44);
+   border-color: rgb(238, 19, 209);
 }
 
 .listbold {
@@ -127,6 +132,12 @@
   font-weight: 600;
   margin-top: 1rem;
   font-style: italic;
+}
+.card-img-top{
+    width: 89%;
+    height: 200px;
+    object-fit: cover;
+
 }
 
 .main-wrapper {

@@ -1,6 +1,7 @@
 var singleProductTemplate;
 var allProducts = [];
-var jwtToken = localStorage.getItem("jwtToken"); // Adjust if you use another method
+var jwtToken = sessionStorage.getItem("jwtToken"); 
+console.log(jwtToken);// Adjust if you use another method
 
 // Load and compile Handlebars template
 axios.get('templates/singleProductTmplt.htm').then((response) => {
@@ -32,8 +33,7 @@ var renderProducts = (products) => {
 var loadProductsToPage = (userQuery = {}) => {
     $("#productDetailsContainer").html('');
 
-    axios.post('/get/productDetails', userQuery, {
-        headers: { "Authorization": `Bearer ${jwtToken}` }
+    axios.post('/get/productDetails', userQuery, {headers: { "Authorization": `Bearer ${jwtToken}` }
     }).then((result) => {
         console.log(result.data);
         allProducts = result.data;
@@ -88,11 +88,21 @@ var fillCategoryListUnderFilter = () => {
             divTag.append(checkbox).append(label);
 
             $("#categoryList").append(divTag);
+           
         });
+         const defaultPrice = $("#priceRangeBar").val();
+            $("#selectedPrice").text(defaultPrice);
+
     }).catch((err) => {
         console.error("Failed to load categories", err);
     });
 };
+
+var loadMoreDetailsPage =(id)=> {
+
+    window.open('/productMoreDetails.html?id=${id}','_blank');
+}
+
 
 // Sort by Title
 var sortByTitle = (order) => {
@@ -123,20 +133,4 @@ $(document).ready(() => {
     fillCategoryListUnderFilter();
     loadProductsToPage();
 });
-
-$("#search").on("keyup", function () {
-    const keyword = $(this).val().trim().toLowerCase();
-    // If keyword is less than 3 characters, do not filtercon
-    console.log("Search keyword:", keyword);
-    if (keyword.length >= 3) {
-        const filtered = allProducts.filter(product =>
-            product.title.toLowerCase().includes(keyword)
-        );
-        renderProducts(filtered);
-    } else if (keyword.length === 0) {
-        renderProducts(allProducts);
-    }
-});
-
-
 

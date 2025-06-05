@@ -23,6 +23,9 @@ var getDbConnection =  async(userData, actionType, collectionName) => {
             var result =  collection.insertOne(userData);
             console.log(result)
             break;
+        case 'deleteOne':
+            var result =  collection.deleteOne(userData);
+            break;
     }
     return result;
 }

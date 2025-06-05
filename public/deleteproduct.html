@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Adda page</title>
+        <script src="lib/handlebar.js"></script>
+    <script src='lib/axios.js'></script>
+    <link rel="stylesheet" href="lib/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="javascripts/productLoad.js"></script>
+    <script src="lib/capthcalib.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/login.js"></script>
+    <script src="lib/ratingStars_lib/rating.js"></script>
+    <link rel="stylesheet" href="lib/ratingStars_lib/rating.css">
+    <script src="javascripts/userSignup.js"></script>
+        <link rel="stylesheet" href="css/addNewProduct.css">
+        <script src="javascripts/addNewProduct.js"></script>
+
+    <body>
+        <div class="container-fluid">
+            <header class="p-3 bg-dark text-white header1">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img src="images/logo1.png" alt="" class="pageLogo">
+                    </a>
+                    <span class="fs-4 text-white">ShopInHand</span>
+
+
+                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                        </ul>
+
+                        <h1 class="pageTitle">Delete Product </h1>
+
+                        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+                        </form> -->
+
+                        <!-- <div class="text-end">
+                            <div class="loggedinUser">
+                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="logoutUser()" >
+                                    LOGOUT
+                                </button>
+                            </div>
+                            <div class="newUer">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    LOGIN
+                                </button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupModal">
+                                    Signup
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="addNewProductDetails">
+                <ul>
+                    <li class="title">
+                        Delete product 
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Title" class="form-control" id="p_title">
+                    </li>
+                    <li>
+                        <input type="number" placeholder="Product Price" class="form-control" id="p_price">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Prodcut description" class="form-control" id="p_desc">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Category" class="form-control" id="p_category">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="productImage" class="form-control" id="p_image">
+                    </li>
+                    <li>
+                        <input type="number" placeholder="Rating" class="form-control" id="p_rating">
+                    </li>
+                    <li>
+                        <input type="button" value="Add Product" class="btn btn-primary" onclick="readProductDetails()">
+                        <input type="button" value="Reset" class="btn btn-success">                    </li>
+                </ul>
+            </main>
+           <footer class="container-fluid bg-light py-5 px-4 border-top  footer1">
+            <!-- 1. Service Slogan -->
+            <div class="row mb-4 text-center">
+                <div class="col">
+                    <h5 class="text-primary">Connecting Buyers and Sellers, One Click at a Time!</h5>
+                </div>
+            </div>
+
+            <!-- 2. Navigation Links -->
+            <div class="row mb-4 text-center">
+                <div class="col">
+
+                    <ul class="nav justify-content-center flex-wrap text-bold on-overflow-auto">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. Social Media Icons -->
+            <div class="row mb-4 text-center">
+                <div class="col">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex justify-content-center gap-4 fs-4">
+                        <a href="https://facebook.com" target="_blank" class="text-secondary fs-4">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="text-secondary fs-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="text-secondary fs-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="text-secondary fs-4">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://youtube.com" target="_blank" class="text-secondary fs-4">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- 4. Copyright -->
+            <div class="row right-end-footer">
+                <div class="col text-right">
+                    <p class="text-body-secondary mb-0">© 2025 <strong>ShopInHand</strong>. All rights reserved.</p>
+                </div>
+            </div>
+
+        </footer>
+        </div>        
+    </body>
+</html>

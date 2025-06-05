@@ -1,0 +1,2402 @@
+[
+  {
+    "title": "Product 1",
+    "price": 40.07,
+    "description": "This is the description of Product 1. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_1.jpg",
+    "rating": {
+      "rate": 1.3,
+      "count": 243
+    },
+    "id": 1
+  },
+  {
+    "title": "Product 2",
+    "price": 107.35,
+    "description": "This is the description of Product 2. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_2.jpg",
+    "rating": {
+      "rate": 1.6,
+      "count": 553
+    },
+    "id": 2
+  },
+  {
+    "title": "Product 3",
+    "price": 166.21,
+    "description": "This is the description of Product 3. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_3.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 53
+    },
+    "id": 3
+  },
+  {
+    "title": "Product 4",
+    "price": 461.09,
+    "description": "This is the description of Product 4. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_4.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 866
+    },
+    "id": 4
+  },
+  {
+    "title": "Product 5",
+    "price": 818.33,
+    "description": "This is the description of Product 5. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_5.jpg",
+    "rating": {
+      "rate": 3.5,
+      "count": 915
+    },
+    "id": 5
+  },
+  {
+    "title": "Product 6",
+    "price": 813.81,
+    "description": "This is the description of Product 6. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_6.jpg",
+    "rating": {
+      "rate": 1.5,
+      "count": 725
+    },
+    "id": 6
+  },
+  {
+    "title": "Product 7",
+    "price": 312.2,
+    "description": "This is the description of Product 7. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_7.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 199
+    },
+    "id": 7
+  },
+  {
+    "title": "Product 8",
+    "price": 836.09,
+    "description": "This is the description of Product 8. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_8.jpg",
+    "rating": {
+      "rate": 2.3,
+      "count": 666
+    },
+    "id": 8
+  },
+  {
+    "title": "Product 9",
+    "price": 505.9,
+    "description": "This is the description of Product 9. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_9.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 626
+    },
+    "id": 9
+  },
+  {
+    "title": "Product 10",
+    "price": 152.08,
+    "description": "This is the description of Product 10. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_10.jpg",
+    "rating": {
+      "rate": 3.2,
+      "count": 305
+    },
+    "id": 10
+  },
+  {
+    "title": "Product 11",
+    "price": 970.35,
+    "description": "This is the description of Product 11. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_11.jpg",
+    "rating": {
+      "rate": 4.0,
+      "count": 388
+    },
+    "id": 11
+  },
+  {
+    "title": "Product 12",
+    "price": 286.71,
+    "description": "This is the description of Product 12. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_12.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 651
+    },
+    "id": 12
+  },
+  {
+    "title": "Product 13",
+    "price": 893.39,
+    "description": "This is the description of Product 13. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_13.jpg",
+    "rating": {
+      "rate": 1.3,
+      "count": 113
+    },
+    "id": 13
+  },
+  {
+    "title": "Product 14",
+    "price": 670.67,
+    "description": "This is the description of Product 14. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_14.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 972
+    },
+    "id": 14
+  },
+  {
+    "title": "Product 15",
+    "price": 188.03,
+    "description": "This is the description of Product 15. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_15.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 691
+    },
+    "id": 15
+  },
+  {
+    "title": "Product 16",
+    "price": 538.48,
+    "description": "This is the description of Product 16. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_16.jpg",
+    "rating": {
+      "rate": 3.1,
+      "count": 143
+    },
+    "id": 16
+  },
+  {
+    "title": "Product 17",
+    "price": 356.91,
+    "description": "This is the description of Product 17. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_17.jpg",
+    "rating": {
+      "rate": 2.3,
+      "count": 705
+    },
+    "id": 17
+  },
+  {
+    "title": "Product 18",
+    "price": 278.93,
+    "description": "This is the description of Product 18. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_18.jpg",
+    "rating": {
+      "rate": 2.0,
+      "count": 739
+    },
+    "id": 18
+  },
+  {
+    "title": "Product 19",
+    "price": 356.95,
+    "description": "This is the description of Product 19. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_19.jpg",
+    "rating": {
+      "rate": 3.7,
+      "count": 230
+    },
+    "id": 19
+  },
+  {
+    "title": "Product 20",
+    "price": 102.96,
+    "description": "This is the description of Product 20. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_20.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 313
+    },
+    "id": 20
+  },
+  {
+    "title": "Product 21",
+    "price": 377.17,
+    "description": "This is the description of Product 21. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_21.jpg",
+    "rating": {
+      "rate": 1.5,
+      "count": 353
+    },
+    "id": 21
+  },
+  {
+    "title": "Product 22",
+    "price": 996.86,
+    "description": "This is the description of Product 22. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_22.jpg",
+    "rating": {
+      "rate": 1.4,
+      "count": 786
+    },
+    "id": 22
+  },
+  {
+    "title": "Product 23",
+    "price": 668.9,
+    "description": "This is the description of Product 23. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_23.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 472
+    },
+    "id": 23
+  },
+  {
+    "title": "Product 24",
+    "price": 937.05,
+    "description": "This is the description of Product 24. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_24.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 609
+    },
+    "id": 24
+  },
+  {
+    "title": "Product 25",
+    "price": 616.51,
+    "description": "This is the description of Product 25. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_25.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 460
+    },
+    "id": 25
+  },
+  {
+    "title": "Product 26",
+    "price": 820.29,
+    "description": "This is the description of Product 26. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_26.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 180
+    },
+    "id": 26
+  },
+  {
+    "title": "Product 27",
+    "price": 843.92,
+    "description": "This is the description of Product 27. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_27.jpg",
+    "rating": {
+      "rate": 1.9,
+      "count": 339
+    },
+    "id": 27
+  },
+  {
+    "title": "Product 28",
+    "price": 94.65,
+    "description": "This is the description of Product 28. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_28.jpg",
+    "rating": {
+      "rate": 1.0,
+      "count": 170
+    },
+    "id": 28
+  },
+  {
+    "title": "Product 29",
+    "price": 826.09,
+    "description": "This is the description of Product 29. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_29.jpg",
+    "rating": {
+      "rate": 2.0,
+      "count": 621
+    },
+    "id": 29
+  },
+  {
+    "title": "Product 30",
+    "price": 103.89,
+    "description": "This is the description of Product 30. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_30.jpg",
+    "rating": {
+      "rate": 1.4,
+      "count": 247
+    },
+    "id": 30
+  },
+  {
+    "title": "Product 31",
+    "price": 923.73,
+    "description": "This is the description of Product 31. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_31.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 640
+    },
+    "id": 31
+  },
+  {
+    "title": "Product 32",
+    "price": 412.77,
+    "description": "This is the description of Product 32. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_32.jpg",
+    "rating": {
+      "rate": 2.0,
+      "count": 105
+    },
+    "id": 32
+  },
+  {
+    "title": "Product 33",
+    "price": 713.45,
+    "description": "This is the description of Product 33. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_33.jpg",
+    "rating": {
+      "rate": 1.3,
+      "count": 240
+    },
+    "id": 33
+  },
+  {
+    "title": "Product 34",
+    "price": 220.88,
+    "description": "This is the description of Product 34. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_34.jpg",
+    "rating": {
+      "rate": 1.5,
+      "count": 702
+    },
+    "id": 34
+  },
+  {
+    "title": "Product 35",
+    "price": 881.72,
+    "description": "This is the description of Product 35. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_35.jpg",
+    "rating": {
+      "rate": 1.3,
+      "count": 503
+    },
+    "id": 35
+  },
+  {
+    "title": "Product 36",
+    "price": 531.08,
+    "description": "This is the description of Product 36. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_36.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 811
+    },
+    "id": 36
+  },
+  {
+    "title": "Product 37",
+    "price": 350.86,
+    "description": "This is the description of Product 37. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_37.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 759
+    },
+    "id": 37
+  },
+  {
+    "title": "Product 38",
+    "price": 871.62,
+    "description": "This is the description of Product 38. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_38.jpg",
+    "rating": {
+      "rate": 1.2,
+      "count": 938
+    },
+    "id": 38
+  },
+  {
+    "title": "Product 39",
+    "price": 960.85,
+    "description": "This is the description of Product 39. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_39.jpg",
+    "rating": {
+      "rate": 1.7,
+      "count": 642
+    },
+    "id": 39
+  },
+  {
+    "title": "Product 40",
+    "price": 752.49,
+    "description": "This is the description of Product 40. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_40.jpg",
+    "rating": {
+      "rate": 2.7,
+      "count": 989
+    },
+    "id": 40
+  },
+  {
+    "title": "Product 41",
+    "price": 447.56,
+    "description": "This is the description of Product 41. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_41.jpg",
+    "rating": {
+      "rate": 2.4,
+      "count": 163
+    },
+    "id": 41
+  },
+  {
+    "title": "Product 42",
+    "price": 317.78,
+    "description": "This is the description of Product 42. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_42.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 587
+    },
+    "id": 42
+  },
+  {
+    "title": "Product 43",
+    "price": 869.04,
+    "description": "This is the description of Product 43. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_43.jpg",
+    "rating": {
+      "rate": 1.5,
+      "count": 25
+    },
+    "id": 43
+  },
+  {
+    "title": "Product 44",
+    "price": 217.37,
+    "description": "This is the description of Product 44. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_44.jpg",
+    "rating": {
+      "rate": 1.0,
+      "count": 965
+    },
+    "id": 44
+  },
+  {
+    "title": "Product 45",
+    "price": 518.35,
+    "description": "This is the description of Product 45. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_45.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 13
+    },
+    "id": 45
+  },
+  {
+    "title": "Product 46",
+    "price": 86.86,
+    "description": "This is the description of Product 46. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_46.jpg",
+    "rating": {
+      "rate": 2.7,
+      "count": 933
+    },
+    "id": 46
+  },
+  {
+    "title": "Product 47",
+    "price": 298.04,
+    "description": "This is the description of Product 47. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_47.jpg",
+    "rating": {
+      "rate": 1.8,
+      "count": 866
+    },
+    "id": 47
+  },
+  {
+    "title": "Product 48",
+    "price": 372.4,
+    "description": "This is the description of Product 48. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_48.jpg",
+    "rating": {
+      "rate": 4.0,
+      "count": 10
+    },
+    "id": 48
+  },
+  {
+    "title": "Product 49",
+    "price": 279.57,
+    "description": "This is the description of Product 49. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_49.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 534
+    },
+    "id": 49
+  },
+  {
+    "title": "Product 50",
+    "price": 523.16,
+    "description": "This is the description of Product 50. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_50.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 795
+    },
+    "id": 50
+  },
+  {
+    "title": "Product 51",
+    "price": 203.85,
+    "description": "This is the description of Product 51. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_51.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 777
+    },
+    "id": 51
+  },
+  {
+    "title": "Product 52",
+    "price": 964.48,
+    "description": "This is the description of Product 52. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_52.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 510
+    },
+    "id": 52
+  },
+  {
+    "title": "Product 53",
+    "price": 878.96,
+    "description": "This is the description of Product 53. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_53.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 593
+    },
+    "id": 53
+  },
+  {
+    "title": "Product 54",
+    "price": 13.7,
+    "description": "This is the description of Product 54. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_54.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 56
+    },
+    "id": 54
+  },
+  {
+    "title": "Product 55",
+    "price": 270.98,
+    "description": "This is the description of Product 55. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_55.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 191
+    },
+    "id": 55
+  },
+  {
+    "title": "Product 56",
+    "price": 433.3,
+    "description": "This is the description of Product 56. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_56.jpg",
+    "rating": {
+      "rate": 2.6,
+      "count": 966
+    },
+    "id": 56
+  },
+  {
+    "title": "Product 57",
+    "price": 76.84,
+    "description": "This is the description of Product 57. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_57.jpg",
+    "rating": {
+      "rate": 2.3,
+      "count": 463
+    },
+    "id": 57
+  },
+  {
+    "title": "Product 58",
+    "price": 930.55,
+    "description": "This is the description of Product 58. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_58.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 790
+    },
+    "id": 58
+  },
+  {
+    "title": "Product 59",
+    "price": 57.59,
+    "description": "This is the description of Product 59. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_59.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 592
+    },
+    "id": 59
+  },
+  {
+    "title": "Product 60",
+    "price": 960.69,
+    "description": "This is the description of Product 60. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_60.jpg",
+    "rating": {
+      "rate": 1.3,
+      "count": 922
+    },
+    "id": 60
+  },
+  {
+    "title": "Product 61",
+    "price": 32.61,
+    "description": "This is the description of Product 61. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_61.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 635
+    },
+    "id": 61
+  },
+  {
+    "title": "Product 62",
+    "price": 571.8,
+    "description": "This is the description of Product 62. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_62.jpg",
+    "rating": {
+      "rate": 3.1,
+      "count": 56
+    },
+    "id": 62
+  },
+  {
+    "title": "Product 63",
+    "price": 568.4,
+    "description": "This is the description of Product 63. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_63.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 988
+    },
+    "id": 63
+  },
+  {
+    "title": "Product 64",
+    "price": 62.0,
+    "description": "This is the description of Product 64. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_64.jpg",
+    "rating": {
+      "rate": 1.2,
+      "count": 943
+    },
+    "id": 64
+  },
+  {
+    "title": "Product 65",
+    "price": 581.33,
+    "description": "This is the description of Product 65. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_65.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 298
+    },
+    "id": 65
+  },
+  {
+    "title": "Product 66",
+    "price": 793.73,
+    "description": "This is the description of Product 66. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_66.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 874
+    },
+    "id": 66
+  },
+  {
+    "title": "Product 67",
+    "price": 926.17,
+    "description": "This is the description of Product 67. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_67.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 959
+    },
+    "id": 67
+  },
+  {
+    "title": "Product 68",
+    "price": 336.24,
+    "description": "This is the description of Product 68. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_68.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 593
+    },
+    "id": 68
+  },
+  {
+    "title": "Product 69",
+    "price": 442.21,
+    "description": "This is the description of Product 69. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_69.jpg",
+    "rating": {
+      "rate": 2.0,
+      "count": 472
+    },
+    "id": 69
+  },
+  {
+    "title": "Product 70",
+    "price": 906.37,
+    "description": "This is the description of Product 70. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_70.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 764
+    },
+    "id": 70
+  },
+  {
+    "title": "Product 71",
+    "price": 659.57,
+    "description": "This is the description of Product 71. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_71.jpg",
+    "rating": {
+      "rate": 2.4,
+      "count": 887
+    },
+    "id": 71
+  },
+  {
+    "title": "Product 72",
+    "price": 866.04,
+    "description": "This is the description of Product 72. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_72.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 607
+    },
+    "id": 72
+  },
+  {
+    "title": "Product 73",
+    "price": 117.37,
+    "description": "This is the description of Product 73. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_73.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 672
+    },
+    "id": 73
+  },
+  {
+    "title": "Product 74",
+    "price": 792.16,
+    "description": "This is the description of Product 74. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_74.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 305
+    },
+    "id": 74
+  },
+  {
+    "title": "Product 75",
+    "price": 904.19,
+    "description": "This is the description of Product 75. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_75.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 891
+    },
+    "id": 75
+  },
+  {
+    "title": "Product 76",
+    "price": 944.7,
+    "description": "This is the description of Product 76. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_76.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 67
+    },
+    "id": 76
+  },
+  {
+    "title": "Product 77",
+    "price": 339.94,
+    "description": "This is the description of Product 77. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_77.jpg",
+    "rating": {
+      "rate": 2.6,
+      "count": 859
+    },
+    "id": 77
+  },
+  {
+    "title": "Product 78",
+    "price": 296.11,
+    "description": "This is the description of Product 78. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_78.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 963
+    },
+    "id": 78
+  },
+  {
+    "title": "Product 79",
+    "price": 323.83,
+    "description": "This is the description of Product 79. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_79.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 401
+    },
+    "id": 79
+  },
+  {
+    "title": "Product 80",
+    "price": 88.61,
+    "description": "This is the description of Product 80. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_80.jpg",
+    "rating": {
+      "rate": 3.2,
+      "count": 599
+    },
+    "id": 80
+  },
+  {
+    "title": "Product 81",
+    "price": 726.41,
+    "description": "This is the description of Product 81. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_81.jpg",
+    "rating": {
+      "rate": 2.5,
+      "count": 704
+    },
+    "id": 81
+  },
+  {
+    "title": "Product 82",
+    "price": 88.03,
+    "description": "This is the description of Product 82. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_82.jpg",
+    "rating": {
+      "rate": 2.8,
+      "count": 20
+    },
+    "id": 82
+  },
+  {
+    "title": "Product 83",
+    "price": 907.09,
+    "description": "This is the description of Product 83. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_83.jpg",
+    "rating": {
+      "rate": 1.2,
+      "count": 608
+    },
+    "id": 83
+  },
+  {
+    "title": "Product 84",
+    "price": 249.84,
+    "description": "This is the description of Product 84. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_84.jpg",
+    "rating": {
+      "rate": 5.0,
+      "count": 372
+    },
+    "id": 84
+  },
+  {
+    "title": "Product 85",
+    "price": 505.71,
+    "description": "This is the description of Product 85. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_85.jpg",
+    "rating": {
+      "rate": 1.7,
+      "count": 909
+    },
+    "id": 85
+  },
+  {
+    "title": "Product 86",
+    "price": 646.98,
+    "description": "This is the description of Product 86. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_86.jpg",
+    "rating": {
+      "rate": 3.4,
+      "count": 731
+    },
+    "id": 86
+  },
+  {
+    "title": "Product 87",
+    "price": 552.5,
+    "description": "This is the description of Product 87. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_87.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 371
+    },
+    "id": 87
+  },
+  {
+    "title": "Product 88",
+    "price": 716.15,
+    "description": "This is the description of Product 88. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_88.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 679
+    },
+    "id": 88
+  },
+  {
+    "title": "Product 89",
+    "price": 29.8,
+    "description": "This is the description of Product 89. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_89.jpg",
+    "rating": {
+      "rate": 2.8,
+      "count": 438
+    },
+    "id": 89
+  },
+  {
+    "title": "Product 90",
+    "price": 858.43,
+    "description": "This is the description of Product 90. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_90.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 23
+    },
+    "id": 90
+  },
+  {
+    "title": "Product 91",
+    "price": 754.22,
+    "description": "This is the description of Product 91. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_91.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 227
+    },
+    "id": 91
+  },
+  {
+    "title": "Product 92",
+    "price": 694.26,
+    "description": "This is the description of Product 92. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_92.jpg",
+    "rating": {
+      "rate": 3.7,
+      "count": 254
+    },
+    "id": 92
+  },
+  {
+    "title": "Product 93",
+    "price": 425.76,
+    "description": "This is the description of Product 93. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_93.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 978
+    },
+    "id": 93
+  },
+  {
+    "title": "Product 94",
+    "price": 341.74,
+    "description": "This is the description of Product 94. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_94.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 367
+    },
+    "id": 94
+  },
+  {
+    "title": "Product 95",
+    "price": 384.21,
+    "description": "This is the description of Product 95. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_95.jpg",
+    "rating": {
+      "rate": 3.1,
+      "count": 688
+    },
+    "id": 95
+  },
+  {
+    "title": "Product 96",
+    "price": 118.51,
+    "description": "This is the description of Product 96. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_96.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 970
+    },
+    "id": 96
+  },
+  {
+    "title": "Product 97",
+    "price": 173.44,
+    "description": "This is the description of Product 97. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_97.jpg",
+    "rating": {
+      "rate": 2.4,
+      "count": 831
+    },
+    "id": 97
+  },
+  {
+    "title": "Product 98",
+    "price": 288.7,
+    "description": "This is the description of Product 98. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_98.jpg",
+    "rating": {
+      "rate": 3.7,
+      "count": 407
+    },
+    "id": 98
+  },
+  {
+    "title": "Product 99",
+    "price": 164.53,
+    "description": "This is the description of Product 99. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_99.jpg",
+    "rating": {
+      "rate": 1.6,
+      "count": 580
+    },
+    "id": 99
+  },
+  {
+    "title": "Product 100",
+    "price": 119.57,
+    "description": "This is the description of Product 100. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_100.jpg",
+    "rating": {
+      "rate": 1.1,
+      "count": 807
+    },
+    "id": 100
+  },
+  {
+    "title": "Product 101",
+    "price": 338.26,
+    "description": "This is the description of Product 101. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_101.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 63
+    },
+    "id": 101
+  },
+  {
+    "title": "Product 102",
+    "price": 191.45,
+    "description": "This is the description of Product 102. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_102.jpg",
+    "rating": {
+      "rate": 3.3,
+      "count": 821
+    },
+    "id": 102
+  },
+  {
+    "title": "Product 103",
+    "price": 564.26,
+    "description": "This is the description of Product 103. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_103.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 105
+    },
+    "id": 103
+  },
+  {
+    "title": "Product 104",
+    "price": 983.69,
+    "description": "This is the description of Product 104. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_104.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 619
+    },
+    "id": 104
+  },
+  {
+    "title": "Product 105",
+    "price": 647.83,
+    "description": "This is the description of Product 105. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_105.jpg",
+    "rating": {
+      "rate": 1.1,
+      "count": 13
+    },
+    "id": 105
+  },
+  {
+    "title": "Product 106",
+    "price": 587.37,
+    "description": "This is the description of Product 106. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_106.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 736
+    },
+    "id": 106
+  },
+  {
+    "title": "Product 107",
+    "price": 297.7,
+    "description": "This is the description of Product 107. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_107.jpg",
+    "rating": {
+      "rate": 3.1,
+      "count": 31
+    },
+    "id": 107
+  },
+  {
+    "title": "Product 108",
+    "price": 910.87,
+    "description": "This is the description of Product 108. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_108.jpg",
+    "rating": {
+      "rate": 3.1,
+      "count": 668
+    },
+    "id": 108
+  },
+  {
+    "title": "Product 109",
+    "price": 471.7,
+    "description": "This is the description of Product 109. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_109.jpg",
+    "rating": {
+      "rate": 3.4,
+      "count": 345
+    },
+    "id": 109
+  },
+  {
+    "title": "Product 110",
+    "price": 571.54,
+    "description": "This is the description of Product 110. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_110.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 877
+    },
+    "id": 110
+  },
+  {
+    "title": "Product 111",
+    "price": 596.63,
+    "description": "This is the description of Product 111. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_111.jpg",
+    "rating": {
+      "rate": 3.5,
+      "count": 73
+    },
+    "id": 111
+  },
+  {
+    "title": "Product 112",
+    "price": 977.38,
+    "description": "This is the description of Product 112. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_112.jpg",
+    "rating": {
+      "rate": 3.0,
+      "count": 383
+    },
+    "id": 112
+  },
+  {
+    "title": "Product 113",
+    "price": 315.78,
+    "description": "This is the description of Product 113. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_113.jpg",
+    "rating": {
+      "rate": 1.6,
+      "count": 1000
+    },
+    "id": 113
+  },
+  {
+    "title": "Product 114",
+    "price": 517.59,
+    "description": "This is the description of Product 114. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_114.jpg",
+    "rating": {
+      "rate": 3.2,
+      "count": 367
+    },
+    "id": 114
+  },
+  {
+    "title": "Product 115",
+    "price": 703.13,
+    "description": "This is the description of Product 115. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_115.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 981
+    },
+    "id": 115
+  },
+  {
+    "title": "Product 116",
+    "price": 421.21,
+    "description": "This is the description of Product 116. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_116.jpg",
+    "rating": {
+      "rate": 1.5,
+      "count": 372
+    },
+    "id": 116
+  },
+  {
+    "title": "Product 117",
+    "price": 759.78,
+    "description": "This is the description of Product 117. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_117.jpg",
+    "rating": {
+      "rate": 3.1,
+      "count": 673
+    },
+    "id": 117
+  },
+  {
+    "title": "Product 118",
+    "price": 42.76,
+    "description": "This is the description of Product 118. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_118.jpg",
+    "rating": {
+      "rate": 5.0,
+      "count": 314
+    },
+    "id": 118
+  },
+  {
+    "title": "Product 119",
+    "price": 660.65,
+    "description": "This is the description of Product 119. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_119.jpg",
+    "rating": {
+      "rate": 3.3,
+      "count": 523
+    },
+    "id": 119
+  },
+  {
+    "title": "Product 120",
+    "price": 155.27,
+    "description": "This is the description of Product 120. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_120.jpg",
+    "rating": {
+      "rate": 3.3,
+      "count": 209
+    },
+    "id": 120
+  },
+  {
+    "title": "Product 121",
+    "price": 453.58,
+    "description": "This is the description of Product 121. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_121.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 817
+    },
+    "id": 121
+  },
+  {
+    "title": "Product 122",
+    "price": 145.85,
+    "description": "This is the description of Product 122. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_122.jpg",
+    "rating": {
+      "rate": 2.0,
+      "count": 453
+    },
+    "id": 122
+  },
+  {
+    "title": "Product 123",
+    "price": 941.49,
+    "description": "This is the description of Product 123. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_123.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 351
+    },
+    "id": 123
+  },
+  {
+    "title": "Product 124",
+    "price": 620.34,
+    "description": "This is the description of Product 124. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_124.jpg",
+    "rating": {
+      "rate": 1.7,
+      "count": 940
+    },
+    "id": 124
+  },
+  {
+    "title": "Product 125",
+    "price": 34.18,
+    "description": "This is the description of Product 125. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_125.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 979
+    },
+    "id": 125
+  },
+  {
+    "title": "Product 126",
+    "price": 128.91,
+    "description": "This is the description of Product 126. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_126.jpg",
+    "rating": {
+      "rate": 3.1,
+      "count": 945
+    },
+    "id": 126
+  },
+  {
+    "title": "Product 127",
+    "price": 336.05,
+    "description": "This is the description of Product 127. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_127.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 442
+    },
+    "id": 127
+  },
+  {
+    "title": "Product 128",
+    "price": 533.58,
+    "description": "This is the description of Product 128. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_128.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 693
+    },
+    "id": 128
+  },
+  {
+    "title": "Product 129",
+    "price": 202.92,
+    "description": "This is the description of Product 129. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_129.jpg",
+    "rating": {
+      "rate": 2.0,
+      "count": 447
+    },
+    "id": 129
+  },
+  {
+    "title": "Product 130",
+    "price": 190.72,
+    "description": "This is the description of Product 130. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_130.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 340
+    },
+    "id": 130
+  },
+  {
+    "title": "Product 131",
+    "price": 537.26,
+    "description": "This is the description of Product 131. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_131.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 171
+    },
+    "id": 131
+  },
+  {
+    "title": "Product 132",
+    "price": 989.41,
+    "description": "This is the description of Product 132. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_132.jpg",
+    "rating": {
+      "rate": 3.3,
+      "count": 644
+    },
+    "id": 132
+  },
+  {
+    "title": "Product 133",
+    "price": 766.45,
+    "description": "This is the description of Product 133. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_133.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 869
+    },
+    "id": 133
+  },
+  {
+    "title": "Product 134",
+    "price": 180.49,
+    "description": "This is the description of Product 134. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_134.jpg",
+    "rating": {
+      "rate": 5.0,
+      "count": 297
+    },
+    "id": 134
+  },
+  {
+    "title": "Product 135",
+    "price": 43.14,
+    "description": "This is the description of Product 135. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_135.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 524
+    },
+    "id": 135
+  },
+  {
+    "title": "Product 136",
+    "price": 50.01,
+    "description": "This is the description of Product 136. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_136.jpg",
+    "rating": {
+      "rate": 3.2,
+      "count": 452
+    },
+    "id": 136
+  },
+  {
+    "title": "Product 137",
+    "price": 541.23,
+    "description": "This is the description of Product 137. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_137.jpg",
+    "rating": {
+      "rate": 1.7,
+      "count": 281
+    },
+    "id": 137
+  },
+  {
+    "title": "Product 138",
+    "price": 972.23,
+    "description": "This is the description of Product 138. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_138.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 372
+    },
+    "id": 138
+  },
+  {
+    "title": "Product 139",
+    "price": 189.32,
+    "description": "This is the description of Product 139. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_139.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 527
+    },
+    "id": 139
+  },
+  {
+    "title": "Product 140",
+    "price": 386.54,
+    "description": "This is the description of Product 140. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_140.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 256
+    },
+    "id": 140
+  },
+  {
+    "title": "Product 141",
+    "price": 509.66,
+    "description": "This is the description of Product 141. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_141.jpg",
+    "rating": {
+      "rate": 3.5,
+      "count": 743
+    },
+    "id": 141
+  },
+  {
+    "title": "Product 142",
+    "price": 664.56,
+    "description": "This is the description of Product 142. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_142.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 227
+    },
+    "id": 142
+  },
+  {
+    "title": "Product 143",
+    "price": 994.17,
+    "description": "This is the description of Product 143. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_143.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 368
+    },
+    "id": 143
+  },
+  {
+    "title": "Product 144",
+    "price": 440.51,
+    "description": "This is the description of Product 144. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_144.jpg",
+    "rating": {
+      "rate": 2.8,
+      "count": 464
+    },
+    "id": 144
+  },
+  {
+    "title": "Product 145",
+    "price": 328.56,
+    "description": "This is the description of Product 145. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_145.jpg",
+    "rating": {
+      "rate": 1.3,
+      "count": 854
+    },
+    "id": 145
+  },
+  {
+    "title": "Product 146",
+    "price": 466.14,
+    "description": "This is the description of Product 146. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_146.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 171
+    },
+    "id": 146
+  },
+  {
+    "title": "Product 147",
+    "price": 12.87,
+    "description": "This is the description of Product 147. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_147.jpg",
+    "rating": {
+      "rate": 2.0,
+      "count": 640
+    },
+    "id": 147
+  },
+  {
+    "title": "Product 148",
+    "price": 394.8,
+    "description": "This is the description of Product 148. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_148.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 965
+    },
+    "id": 148
+  },
+  {
+    "title": "Product 149",
+    "price": 159.23,
+    "description": "This is the description of Product 149. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_149.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 759
+    },
+    "id": 149
+  },
+  {
+    "title": "Product 150",
+    "price": 600.22,
+    "description": "This is the description of Product 150. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_150.jpg",
+    "rating": {
+      "rate": 1.3,
+      "count": 551
+    },
+    "id": 150
+  },
+  {
+    "title": "Product 151",
+    "price": 330.19,
+    "description": "This is the description of Product 151. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_151.jpg",
+    "rating": {
+      "rate": 3.1,
+      "count": 812
+    },
+    "id": 151
+  },
+  {
+    "title": "Product 152",
+    "price": 298.27,
+    "description": "This is the description of Product 152. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_152.jpg",
+    "rating": {
+      "rate": 2.8,
+      "count": 555
+    },
+    "id": 152
+  },
+  {
+    "title": "Product 153",
+    "price": 42.79,
+    "description": "This is the description of Product 153. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_153.jpg",
+    "rating": {
+      "rate": 2.3,
+      "count": 579
+    },
+    "id": 153
+  },
+  {
+    "title": "Product 154",
+    "price": 970.78,
+    "description": "This is the description of Product 154. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_154.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 16
+    },
+    "id": 154
+  },
+  {
+    "title": "Product 155",
+    "price": 988.78,
+    "description": "This is the description of Product 155. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_155.jpg",
+    "rating": {
+      "rate": 2.4,
+      "count": 41
+    },
+    "id": 155
+  },
+  {
+    "title": "Product 156",
+    "price": 818.68,
+    "description": "This is the description of Product 156. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_156.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 855
+    },
+    "id": 156
+  },
+  {
+    "title": "Product 157",
+    "price": 621.24,
+    "description": "This is the description of Product 157. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_157.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 253
+    },
+    "id": 157
+  },
+  {
+    "title": "Product 158",
+    "price": 762.41,
+    "description": "This is the description of Product 158. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_158.jpg",
+    "rating": {
+      "rate": 3.0,
+      "count": 520
+    },
+    "id": 158
+  },
+  {
+    "title": "Product 159",
+    "price": 272.03,
+    "description": "This is the description of Product 159. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_159.jpg",
+    "rating": {
+      "rate": 1.8,
+      "count": 555
+    },
+    "id": 159
+  },
+  {
+    "title": "Product 160",
+    "price": 506.07,
+    "description": "This is the description of Product 160. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_160.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 208
+    },
+    "id": 160
+  },
+  {
+    "title": "Product 161",
+    "price": 977.06,
+    "description": "This is the description of Product 161. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_161.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 815
+    },
+    "id": 161
+  },
+  {
+    "title": "Product 162",
+    "price": 656.3,
+    "description": "This is the description of Product 162. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_162.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 343
+    },
+    "id": 162
+  },
+  {
+    "title": "Product 163",
+    "price": 177.34,
+    "description": "This is the description of Product 163. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_163.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 53
+    },
+    "id": 163
+  },
+  {
+    "title": "Product 164",
+    "price": 94.53,
+    "description": "This is the description of Product 164. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_164.jpg",
+    "rating": {
+      "rate": 3.7,
+      "count": 375
+    },
+    "id": 164
+  },
+  {
+    "title": "Product 165",
+    "price": 284.78,
+    "description": "This is the description of Product 165. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_165.jpg",
+    "rating": {
+      "rate": 1.9,
+      "count": 861
+    },
+    "id": 165
+  },
+  {
+    "title": "Product 166",
+    "price": 444.64,
+    "description": "This is the description of Product 166. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_166.jpg",
+    "rating": {
+      "rate": 2.5,
+      "count": 780
+    },
+    "id": 166
+  },
+  {
+    "title": "Product 167",
+    "price": 658.64,
+    "description": "This is the description of Product 167. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_167.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 108
+    },
+    "id": 167
+  },
+  {
+    "title": "Product 168",
+    "price": 868.26,
+    "description": "This is the description of Product 168. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_168.jpg",
+    "rating": {
+      "rate": 1.4,
+      "count": 191
+    },
+    "id": 168
+  },
+  {
+    "title": "Product 169",
+    "price": 838.1,
+    "description": "This is the description of Product 169. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_169.jpg",
+    "rating": {
+      "rate": 1.8,
+      "count": 536
+    },
+    "id": 169
+  },
+  {
+    "title": "Product 170",
+    "price": 80.74,
+    "description": "This is the description of Product 170. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_170.jpg",
+    "rating": {
+      "rate": 1.5,
+      "count": 332
+    },
+    "id": 170
+  },
+  {
+    "title": "Product 171",
+    "price": 561.7,
+    "description": "This is the description of Product 171. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_171.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 894
+    },
+    "id": 171
+  },
+  {
+    "title": "Product 172",
+    "price": 706.75,
+    "description": "This is the description of Product 172. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_172.jpg",
+    "rating": {
+      "rate": 2.4,
+      "count": 616
+    },
+    "id": 172
+  },
+  {
+    "title": "Product 173",
+    "price": 924.56,
+    "description": "This is the description of Product 173. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_173.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 856
+    },
+    "id": 173
+  },
+  {
+    "title": "Product 174",
+    "price": 596.03,
+    "description": "This is the description of Product 174. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_174.jpg",
+    "rating": {
+      "rate": 3.8,
+      "count": 130
+    },
+    "id": 174
+  },
+  {
+    "title": "Product 175",
+    "price": 807.33,
+    "description": "This is the description of Product 175. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_175.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 615
+    },
+    "id": 175
+  },
+  {
+    "title": "Product 176",
+    "price": 962.92,
+    "description": "This is the description of Product 176. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_176.jpg",
+    "rating": {
+      "rate": 3.4,
+      "count": 114
+    },
+    "id": 176
+  },
+  {
+    "title": "Product 177",
+    "price": 819.86,
+    "description": "This is the description of Product 177. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_177.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 523
+    },
+    "id": 177
+  },
+  {
+    "title": "Product 178",
+    "price": 278.62,
+    "description": "This is the description of Product 178. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_178.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 199
+    },
+    "id": 178
+  },
+  {
+    "title": "Product 179",
+    "price": 279.38,
+    "description": "This is the description of Product 179. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_179.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 343
+    },
+    "id": 179
+  },
+  {
+    "title": "Product 180",
+    "price": 482.8,
+    "description": "This is the description of Product 180. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_180.jpg",
+    "rating": {
+      "rate": 1.9,
+      "count": 10
+    },
+    "id": 180
+  },
+  {
+    "title": "Product 181",
+    "price": 704.59,
+    "description": "This is the description of Product 181. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_181.jpg",
+    "rating": {
+      "rate": 2.7,
+      "count": 370
+    },
+    "id": 181
+  },
+  {
+    "title": "Product 182",
+    "price": 769.99,
+    "description": "This is the description of Product 182. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_182.jpg",
+    "rating": {
+      "rate": 1.2,
+      "count": 403
+    },
+    "id": 182
+  },
+  {
+    "title": "Product 183",
+    "price": 589.75,
+    "description": "This is the description of Product 183. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_183.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 764
+    },
+    "id": 183
+  },
+  {
+    "title": "Product 184",
+    "price": 547.04,
+    "description": "This is the description of Product 184. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_184.jpg",
+    "rating": {
+      "rate": 2.5,
+      "count": 347
+    },
+    "id": 184
+  },
+  {
+    "title": "Product 185",
+    "price": 793.33,
+    "description": "This is the description of Product 185. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_185.jpg",
+    "rating": {
+      "rate": 5.0,
+      "count": 857
+    },
+    "id": 185
+  },
+  {
+    "title": "Product 186",
+    "price": 553.37,
+    "description": "This is the description of Product 186. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_186.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 934
+    },
+    "id": 186
+  },
+  {
+    "title": "Product 187",
+    "price": 601.61,
+    "description": "This is the description of Product 187. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_187.jpg",
+    "rating": {
+      "rate": 1.5,
+      "count": 843
+    },
+    "id": 187
+  },
+  {
+    "title": "Product 188",
+    "price": 953.71,
+    "description": "This is the description of Product 188. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_188.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 751
+    },
+    "id": 188
+  },
+  {
+    "title": "Product 189",
+    "price": 781.04,
+    "description": "This is the description of Product 189. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_189.jpg",
+    "rating": {
+      "rate": 2.6,
+      "count": 509
+    },
+    "id": 189
+  },
+  {
+    "title": "Product 190",
+    "price": 613.32,
+    "description": "This is the description of Product 190. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_190.jpg",
+    "rating": {
+      "rate": 2.8,
+      "count": 411
+    },
+    "id": 190
+  },
+  {
+    "title": "Product 191",
+    "price": 158.9,
+    "description": "This is the description of Product 191. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_191.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 621
+    },
+    "id": 191
+  },
+  {
+    "title": "Product 192",
+    "price": 938.6,
+    "description": "This is the description of Product 192. Ideal for multiple use cases and available in various colors.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/product_192.jpg",
+    "rating": {
+      "rate": 1.5,
+      "count": 696
+    },
+    "id": 192
+  },
+  {
+    "title": "Product 193",
+    "price": 637.31,
+    "description": "This is the description of Product 193. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_193.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 747
+    },
+    "id": 193
+  },
+  {
+    "title": "Product 194",
+    "price": 482.39,
+    "description": "This is the description of Product 194. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_194.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 717
+    },
+    "id": 194
+  },
+  {
+    "title": "Product 195",
+    "price": 658.26,
+    "description": "This is the description of Product 195. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_195.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 548
+    },
+    "id": 195
+  },
+  {
+    "title": "Product 196",
+    "price": 521.66,
+    "description": "This is the description of Product 196. Ideal for multiple use cases and available in various colors.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/product_196.jpg",
+    "rating": {
+      "rate": 2.5,
+      "count": 14
+    },
+    "id": 196
+  },
+  {
+    "title": "Product 197",
+    "price": 171.06,
+    "description": "This is the description of Product 197. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_197.jpg",
+    "rating": {
+      "rate": 2.0,
+      "count": 145
+    },
+    "id": 197
+  },
+  {
+    "title": "Product 198",
+    "price": 476.17,
+    "description": "This is the description of Product 198. Ideal for multiple use cases and available in various colors.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/product_198.jpg",
+    "rating": {
+      "rate": 1.7,
+      "count": 228
+    },
+    "id": 198
+  },
+  {
+    "title": "Product 199",
+    "price": 223.18,
+    "description": "This is the description of Product 199. Ideal for multiple use cases and available in various colors.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/product_199.jpg",
+    "rating": {
+      "rate": 2.8,
+      "count": 708
+    },
+    "id": 199
+  },
+  {
+    "title": "Product 200",
+    "price": 946.55,
+    "description": "This is the description of Product 200. Ideal for multiple use cases and available in various colors.",
+    "category": "home appliances",
+    "image": "https://fakestoreapi.com/img/product_200.jpg",
+    "rating": {
+      "rate": 3.4,
+      "count": 56
+    },
+    "id": 200
+  }
+]

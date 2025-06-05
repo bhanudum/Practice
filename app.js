@@ -17,7 +17,8 @@ var categoryListRouter = require("./routes/getCategoryList");
 var addNewProductRouter = require("./routes/addNewProducDetails");
 
 
-var app = express();
+
+app = express();
 
 app.use(session({
   secret: process.env.SESSION_SECRET_KEY,

@@ -4,7 +4,7 @@
             <span class="filterTitle ">Filter</span>
 
             </br>
-            <span> Price Range Rs.: <span id="selectedPrice"></span> </span>
+            <span> Price Range Rs.: <span id="selectedPrice"> </span> </span>
 
             <input type="range" min="100" max="1000" onchange="setPriceRange()" id="priceRangeBar" step="100" ></span>
         </div>
@@ -22,9 +22,7 @@
             <button class="btn btn-secondary" onclick="clearFilter()">
                 Clear Filter </button>
 
-            <button class="AddProduct" onclick="location.href='addNewProduct.html'">
-                Add New Product
-            </button>
+            
         </div>
 
         <div class="sorting">
@@ -51,6 +49,12 @@
 
         <p class="fw-bold">Total Products: <span id="totalProducts"> </span></p>
         <p class="fw-bold">Total Price ₹ <span id="totalPrice"> </span></p>
+        <button class="AddProduct" onclick="location.href='addNewProduct.html'">
+                Add New Product
+            </button>
+            <button class="deleteProduct" onclick="location.href='deleteProduct.html'">
+                Delete Product
+            </button>
        
     </div>
 

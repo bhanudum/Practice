@@ -32,6 +32,7 @@ router.post('/', (req, res) => {
             });
         } else { // invalid user with invalid token
             res.send(JSON.stringify({'msg': 'Unauthorized user________________'}));
+            console.log(jwtToken);
         }
     });    
 });

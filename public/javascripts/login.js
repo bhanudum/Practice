@@ -1,5 +1,5 @@
 
-var jwtToken = '';
+
 var validateUserCredentials = () => {
     var userData = {};
     userData.accountId = $("#userAccountId").val();
@@ -13,6 +13,7 @@ var validateUserCredentials = () => {
             $("#statusMsg").text('Invalid Credentials, please try again...');
         } else {
             jwtToken = result.data.token;
+            sessionStorage.setItem('jwtToken',jwtToken);
             $("#statusMsg").text('Login successful, redirecting to product details...');
             if (userData.rememberMe) {
                 localStorage.setItem('accountId', userData.accountId);
