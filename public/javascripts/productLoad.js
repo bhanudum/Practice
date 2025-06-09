@@ -3,6 +3,8 @@ var allProducts = [];
 var jwtToken = sessionStorage.getItem("jwtToken"); 
 console.log(jwtToken);// Adjust if you use another method
 
+const isDeletePage = window.location.pathname.includes("deleteProduct.html");
+
 // Load and compile Handlebars template
 axios.get('templates/singleProductTmplt.htm').then((response) => {
     singleProductTemplate = Handlebars.compile(response.data);
@@ -12,20 +14,28 @@ axios.get('templates/singleProductTmplt.htm').then((response) => {
 var renderProducts = (products) => {
     $("#productDetailsContainer").html('');
     console.log(products.length + " products found");
+
      $("#totalProducts").text(products.length);
-     const totalPrice = products.reduce((sum, p) => sum + p.price, 0).toFixed(2);
+
+     const totalPrice = products.reduce((sum, p) => sum + Number(p.price || 0), 0).toFixed(2);
      $("#totalPrice").text(totalPrice);
+
+    
+    
     products.forEach((product, index) => {
         product.title = product.title.substr(0, 50);
         product.category=product.category.substr(0, 20);
         product.category = product.category.charAt(0).toUpperCase() + product.category.slice(1);
         product.description = product.description.substr(0, 85) + '...';
         product.index = index;
+        product.isDeletePage = isDeletePage;
+
 
         $("#productDetailsContainer").append(singleProductTemplate(product));
 
         var ratingContainer = `#rating_${index}`;
         addRatingStarsToContainer(product.rating.rate, ratingContainer);
+       
     });
 };
 
@@ -81,6 +91,7 @@ var clearFilter = () => {
 var fillCategoryListUnderFilter = () => {
     axios.get('/category/list').then((response) => {
         var categoryList = response.data;
+        categoryList.sort((a, b) => a.localeCompare(b));
         categoryList.forEach((category) => {
             var divTag = $("<div/>").addClass("form-check");
             var checkbox = $(`<input type="checkbox" value="${category}" class="form-check-input"/>`);
@@ -133,4 +144,25 @@ $(document).ready(() => {
     fillCategoryListUnderFilter();
     loadProductsToPage();
 });
+
+
+// function deleteProduct(productId) {
+//     if (!confirm("Are you sure you want to delete this product?")) return;
+
+//     axios.post('/delete/product', { _id: productId }, {
+//         headers: { "Authorization": `Bearer ${jwtToken}` }
+//     }).then((response) => {
+//         if (response.data.msg === "success") {
+
+//             console.log(response.data+ " Product deleted successfully");
+//             alert("Product was deleted successfully.");
+//             loadProductsToPage();  // Refresh list
+//         } else {
+//             alert("Failed to delete the product.");
+//         }
+//     }).catch((err) => {
+//         console.error("Delete error", err);
+//         alert("Error deleting product");
+//     });
+// }
 

@@ -1,19 +1,34 @@
 <div class="card" style="width: 18rem;">
-  <img src="{{image}}" class="card-img-top" alt="Product image"  onerror="this.onerror=null; this.src='images/defults.png'" >
+  <img src="{{image}}" class="card-img-top" alt="Product image"  onerror="this.onerror=null; this.src='/images/defults.png'" >
   <div class="card-body">
     <h5 class="card-title"> <strong> Name:</strong>{{title}}</h5>
     <p class="card-text"> <strong> Category:</strong> {{category}}</p>
     <p class="card-text">{{description}}</p>
     <div class="priceValue"> <strong> ₹  </strong>{{price}}</div>
     <div class="ratingContainer" id="rating_{{index}}"></div> <br>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col">
             <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
         </div>
         <div class="col">
             <a href="#" class="btn btn-primary btn-sm" onclick="loadMoreDetailsPage()">More details</a>
         </div>
+    </div> -->
+
+    <div class="row">
+    {{#if isDeletePage}}
+    <div class="col">
+        <button class="btn btn-danger btn-sm" onclick="deleteProduct('{{_id}}')">Delete</button>
     </div>
+    {{else}}
+    <div class="col">
+        <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+    </div>
+    <div class="col">
+        <a href="#" class="btn btn-primary btn-sm" onclick="loadMoreDetailsPage('{{_id}}')">More details</a>
+    </div>
+    {{/if}}
+</div>
     
   </div>
 </div>

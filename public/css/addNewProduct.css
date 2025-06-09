@@ -104,3 +104,27 @@
         margin-left: 0;
     }
 }
+
+
+
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  gap: 50px; /* spacing between file input and button */
+  
+}
+
+.file-input {
+  flex: 1; /* file input takes remaining space */
+  max-width: 700px;
+}
+
+.upload-btn {
+  white-space: nowrap;
+ padding: 4px 10px;     /* smaller padding */
+  font-size: 12px;        /* smaller text */
+  height: 40px;           /* optional: reduce height */
+  line-height: 1;
+
+}

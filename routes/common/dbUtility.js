@@ -26,6 +26,8 @@ var getDbConnection =  async(userData, actionType, collectionName) => {
         case 'deleteOne':
             var result =  collection.deleteOne(userData);
             break;
+
+        
     }
     return result;
 }

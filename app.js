@@ -15,6 +15,8 @@ var empDetails = require("./routes/employeeDetails")
 var session = require('express-session');
 var categoryListRouter = require("./routes/getCategoryList");
 var addNewProductRouter = require("./routes/addNewProducDetails");
+var uploadResourceRouter = require("./routes/uploadFiles");
+var deleteProductRouter = require("./routes/deleteProduct");
 
 
 
@@ -51,6 +53,11 @@ app.use('/destroy/userSession', destroySessionRouter);
 app.use("/retrive/employeeDetails", empDetails);
 app.use("/category/list", categoryListRouter);
 app.use('/add/new/product', addNewProductRouter);
+app.use('/upload/resource', uploadResourceRouter); 
+app.use(express.static('public'));
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
+app.use('/delete/product', deleteProductRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

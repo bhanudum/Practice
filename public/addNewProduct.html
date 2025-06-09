@@ -21,6 +21,7 @@
     <script src="javascripts/userSignup.js"></script>
         <link rel="stylesheet" href="css/addNewProduct.css">
         <script src="javascripts/addNewProduct.js"></script>
+        
 
     <body>
         <div class="container-fluid">
@@ -80,11 +81,28 @@
                     <li>
                         <input type="text" placeholder="Prodcut description" class="form-control" id="p_desc">
                     </li>
-                    <li>
+                    <!-- <li>
                         <input type="text" placeholder="Category" class="form-control" id="p_category">
+
+                    </li> -->
+                    <li class="form-group">
+                    <label for="p_category">Category</label>
+                    <select id="p_category" class="form-control"  required>
+                     <option value="">-- Select Category --</option>
+                         <!-- Options will be appended here dynamically -->
+                        </select>
                     </li>
-                    <li>
-                        <input type="text" placeholder="productImage" class="form-control" id="p_image">
+
+                    <li class="imgupload ">
+                        <form method="POST" enctype="multipart/form-data" >
+                            <div class="upload-container">
+
+                                <input type="file" name="prodImage" class="form-control file-input" onchange="handleFileChange()" required>
+                                <input type="button" value="Upload Image" onclick="uploadImage()" class="uploadbutton upload-btn btn-sm" id="uploadBtn" disabled>
+                       
+                        <!-- <input type="file" name="prodImage"  class="form-control file-input"  required>
+                        <input type="button"  value="Upload Image" onclick="uploadImage()" class="uploadbutton upload-btn btn-sm" > -->
+                            </div>
                     </li>
                     <li>
                         <input type="number" placeholder="Rating" class="form-control" id="p_rating">
@@ -92,6 +110,7 @@
                     <li>
                         <input type="button" value="Add Product" class="btn btn-primary" onclick="readProductDetails()">
                         <input type="button" value="Reset" class="btn btn-success">                    </li>
+                        <li> <span class="addnewproductmsgblock text-success" id="msgBlock"> </span></li>
                 </ul>
             </main>
            <footer class="container-fluid bg-light py-5 px-4 border-top  footer1">
