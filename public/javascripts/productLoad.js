@@ -6,9 +6,13 @@ console.log(jwtToken);// Adjust if you use another method
 const isDeletePage = window.location.pathname.includes("deleteProduct.html");
 
 // Load and compile Handlebars template
-axios.get('templates/singleProductTmplt.htm').then((response) => {
+axios.get('templates/singleProductTmplt.htm')
+  .then((response) => {
     singleProductTemplate = Handlebars.compile(response.data);
-});
+  })
+  .catch((error) => {
+    console.error("Failed to load product template", error);
+  });
 
 // Reusable function to render product cards
 var renderProducts = (products) => {
@@ -86,6 +90,9 @@ var clearFilter = () => {
 
     // Reload all products
     loadProductsToPage({});
+    window.scrollTo(0, 0);
+// Optionally
+  alert("Filters cleared")
 };
 // Load category filter checkboxes
 var fillCategoryListUnderFilter = () => {
@@ -111,7 +118,8 @@ var fillCategoryListUnderFilter = () => {
 
 var loadMoreDetailsPage =(id)=> {
 
-    window.open('/productMoreDetails.html?id=${id}','_blank');
+    window.open(`/productMoreDetails.html?id=${id}`, '_blank');
+
 }
 
 
@@ -140,29 +148,85 @@ var sortByPrice = (order) => {
 };
 
 // Optionally call on page load
+
+
+
+
+
+
+
+
+
+function toggleCart() {
+  const cartSection = document.getElementById('cartSection');
+  const display = cartSection.style.display;
+
+  if (display === 'none') {
+    renderCart(); // show updated data
+    cartSection.style.display = 'block';
+  } else {
+    cartSection.style.display = 'none';
+  }
+}
+
+function addToCart(id, title, price) {
+  const existing = cart.find(item => item.id === id);
+
+  if (existing) {
+    existing.quantity += 1;
+  } else {
+    cart.push({ id, title, price: parseFloat(price), quantity: 1 });
+  }
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart(); // update cart UI
+
+  // ✅ Show message & scroll to cart
+  alert(`${title} added to cart`);
+  toggleCart();
+}
+
+function renderCart() {
+  const cartBody = document.getElementById('cartBody');
+  const totalItemsEl = document.getElementById('totalItems');
+  const totalAmountEl = document.getElementById('totalAmount');
+
+  cartBody.innerHTML = '';
+  let totalItems = 0;
+  let totalAmount = 0;
+
+  cart.forEach((item, index) => {
+    const itemTotal = item.price * item.quantity;
+    const row = `
+      <tr>
+        <td>${index + 1}</td>
+        <td>${item.title}</td>
+        <td>₹ ${item.price.toFixed(2)}</td>
+        <td>${item.quantity}</td>
+        <td>₹ ${itemTotal.toFixed(2)}</td>
+        <td>
+          <button onclick="removeFromCart('${item.id}')" class="btn btn-sm btn-danger">🗑️</button>
+        </td>
+      </tr>
+    `;
+    cartBody.innerHTML += row;
+    totalItems += item.quantity;
+    totalAmount += itemTotal;
+  });
+
+  totalItemsEl.textContent = totalItems;
+  totalAmountEl.textContent = totalAmount.toFixed(2);
+}
+
+function removeFromCart(id) {
+  cart = cart.filter(item => item.id !== id);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart(); // refresh UI
+}
+
 $(document).ready(() => {
-    fillCategoryListUnderFilter();
-    loadProductsToPage();
+  cart = JSON.parse(localStorage.getItem('cart')) || [];
+  renderCart();
+  fillCategoryListUnderFilter();
+  loadProductsToPage();
 });
-
-
-// function deleteProduct(productId) {
-//     if (!confirm("Are you sure you want to delete this product?")) return;
-
-//     axios.post('/delete/product', { _id: productId }, {
-//         headers: { "Authorization": `Bearer ${jwtToken}` }
-//     }).then((response) => {
-//         if (response.data.msg === "success") {
-
-//             console.log(response.data+ " Product deleted successfully");
-//             alert("Product was deleted successfully.");
-//             loadProductsToPage();  // Refresh list
-//         } else {
-//             alert("Failed to delete the product.");
-//         }
-//     }).catch((err) => {
-//         console.error("Delete error", err);
-//         alert("Error deleting product");
-//     });
-// }
-

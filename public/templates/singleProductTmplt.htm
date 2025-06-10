@@ -6,14 +6,7 @@
     <p class="card-text">{{description}}</p>
     <div class="priceValue"> <strong> ₹  </strong>{{price}}</div>
     <div class="ratingContainer" id="rating_{{index}}"></div> <br>
-    <!-- <div class="row">
-        <div class="col">
-            <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-        </div>
-        <div class="col">
-            <a href="#" class="btn btn-primary btn-sm" onclick="loadMoreDetailsPage()">More details</a>
-        </div>
-    </div> -->
+    
 
     <div class="row">
     {{#if isDeletePage}}
@@ -22,8 +15,10 @@
     </div>
     {{else}}
     <div class="col">
-        <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+        <button class="btn btn-primary btn-sm" onclick="addToCart('{{_id}}', '{{title}}', '{{price}}')">Add to Cart</button>
     </div>
+
+    
     <div class="col">
         <a href="#" class="btn btn-primary btn-sm" onclick="loadMoreDetailsPage('{{_id}}')">More details</a>
     </div>
@@ -31,4 +26,25 @@
 </div>
     
   </div>
+</div>
+
+
+<div id="cartSection" style="display: none; margin-top: 20px;">
+  <h2>Cart Details Summary</h2>
+  <table id="cartTable" border="3px" width="100%">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cartBody"></tbody>
+  </table>
+  <p><strong>Total Items:</strong> <span id="totalItems">0</span></p>
+  <p><strong>Total Price ₹:</strong> <span id="totalAmount">0.00</span></p>
+  <button class="btn btn-danger" onclick="toggleCart()">Close Cart</button>
 </div>
