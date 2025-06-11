@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order List - ShopInHand</title>
+
+  
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+
+  <script src="lib/jquery.js"></script>
+  <script src="lib/axios.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="p-3 bg-dark text-white">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="images/logo1.png" alt="Logo" class="pageLogo" style="height: 40px; margin-right: 10px;">
+        <span class="fs-4">ShopInHand</span>
+      </div>
+
+      <button class="btn btn-outline-light" onclick="logoutUser()">Logout</button>
+    </div>
+  </header>
+
+  <body>
+    <div class="container">
+        <h2>Orders Details</h2>
+        <div id="ordersContainer"></div>
+        <a href="index.html" class="btn btn-success mt-3">← Back to Products</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="orderslist.js"></script>
+</body>
+
+  <footer class="container-fluid bg-light py-4 mt-5 border-top text-center">
+    <h5 class="text-primary">Connecting Buyers and Sellers, One Click at a Time!</h5>
+    <p class="mb-0 text-secondary">© 2025 ShopInHand. All rights reserved.</p>
+  </footer>
+
+  
+    <script src="javascripts/orderslist.js"></script>
+</body>
+</html> 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order List - ShopInHand</title>
+
+  <!-- Bootstrap and FontAwesome -->
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Scripts -->
+  <script src="lib/jquery.js"></script>
+  <script src="lib/axios.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .order-box {
+      background: #f9f9f9;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .order-header {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #007bff;
+    }
+    .order-meta {
+      font-size: 1rem;
+      margin: 5px 0;
+      color: #555;
+    }
+    .items-list {
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+    .item-line {
+      font-size: 0.95rem;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="p-3 bg-dark text-white">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="images/logo1.png" alt="Logo" class="pageLogo" style="height: 40px; margin-right: 10px;">
+        <span class="fs-4">ShopInHand</span>
+      </div>
+      <button class="btn btn-outline-light" onclick="logoutUser()">Logout</button>
+    </div>
+  </header>
+
+  <!-- Orders Content -->
+  <main class="container my-5">
+    <h2 class="mb-4">Orders Details</h2>
+    <div id="ordersContainer"></div>
+    <a href="index.html" class="btn btn-success mt-3">← Back to Products</a>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-light py-4 mt-5 border-top text-center">
+    <h5 class="text-primary">Connecting Buyers and Sellers, One Click at a Time!</h5>
+    <p class="mb-0 text-secondary">© 2025 ShopInHand. All rights reserved.</p>
+  </footer>
+
+  <!-- Your JavaScript -->
+  <script src="javascripts/orderslist.js"></script>
+</body>
+</html>

@@ -1,9 +1,11 @@
 var singleProductTemplate;
 var allProducts = [];
+
 var jwtToken = sessionStorage.getItem("jwtToken"); 
 console.log(jwtToken);// Adjust if you use another method
 
 const isDeletePage = window.location.pathname.includes("deleteProduct.html");
+const isviewcartpage= window.location.pathname.includes("viewcartdetails.html");
 
 // Load and compile Handlebars template
 axios.get('templates/singleProductTmplt.htm')
@@ -28,11 +30,16 @@ var renderProducts = (products) => {
     
     products.forEach((product, index) => {
         product.title = product.title.substr(0, 50);
-        product.category=product.category.substr(0, 20);
-        product.category = product.category.charAt(0).toUpperCase() + product.category.slice(1);
+       
+        product.category = (product.category || '').substr(0, 20);
+        if (product.category) {
+          product.category = product.category.charAt(0).toUpperCase() + product.category.slice(1);
+        } 
+        
         product.description = product.description.substr(0, 85) + '...';
         product.index = index;
         product.isDeletePage = isDeletePage;
+        product.isviewcartpage = isviewcartpage;
 
 
         $("#productDetailsContainer").append(singleProductTemplate(product));
@@ -52,6 +59,7 @@ var loadProductsToPage = (userQuery = {}) => {
         console.log(result.data);
         allProducts = result.data;
         renderProducts(allProducts);
+         renderCart();
     }).catch((err) => {
         console.error("Failed to load products", err);
     });
@@ -64,6 +72,7 @@ var setPriceRange = () => {
 
 // Filter: Category + Price
 var applyFilter = () => {
+ 
     var userQuery = {};
     userQuery.priceRange = $("#priceRangeBar").val();
     userQuery.categoryList = [];
@@ -74,15 +83,16 @@ var applyFilter = () => {
     });
 
     loadProductsToPage(userQuery);
+    
 };
 
 var clearFilter = () => {
     
-    // Reset price range to minimum
+  
     $("#priceRangeBar").val(100);
     $("#selectedPrice").text(100);
 
-    // Uncheck all category checkboxes
+    
     $("#categoryList input[type='checkbox']").prop('checked', false);
 
     // Clear the search input
@@ -93,6 +103,7 @@ var clearFilter = () => {
     window.scrollTo(0, 0);
 // Optionally
   alert("Filters cleared")
+  
 };
 // Load category filter checkboxes
 var fillCategoryListUnderFilter = () => {
@@ -106,6 +117,7 @@ var fillCategoryListUnderFilter = () => {
             divTag.append(checkbox).append(label);
 
             $("#categoryList").append(divTag);
+            
            
         });
          const defaultPrice = $("#priceRangeBar").val();
@@ -115,14 +127,6 @@ var fillCategoryListUnderFilter = () => {
         console.error("Failed to load categories", err);
     });
 };
-
-var loadMoreDetailsPage =(id)=> {
-
-    window.open(`/productMoreDetails.html?id=${id}`, '_blank');
-
-}
-
-
 // Sort by Title
 var sortByTitle = (order) => {
     if (!order || !allProducts) return;
@@ -134,6 +138,7 @@ var sortByTitle = (order) => {
     });
 
     renderProducts(allProducts);
+    
 };
 
 // Sort by Price
@@ -145,27 +150,22 @@ var sortByPrice = (order) => {
     });
 
     renderProducts(allProducts);
+   
 };
-
-// Optionally call on page load
-
-
-
-
-
-
-
-
 
 function toggleCart() {
   const cartSection = document.getElementById('cartSection');
-  const display = cartSection.style.display;
+  const toggleBtn = document.getElementById('toggleCartBtn');
 
-  if (display === 'none') {
-    renderCart(); // show updated data
+  const isHidden = cartSection.style.display === 'none' || cartSection.style.display === '';
+
+  if (isHidden) {
+    renderCart();
     cartSection.style.display = 'block';
+    toggleBtn.textContent = "❌ Close Cart";
   } else {
     cartSection.style.display = 'none';
+    toggleBtn.textContent = "🛒 View Cart";
   }
 }
 
@@ -179,17 +179,24 @@ function addToCart(id, title, price) {
   }
 
   localStorage.setItem('cart', JSON.stringify(cart));
-  renderCart(); // update cart UI
+  if (cart.length > 0) {
+    document.getElementById('cartSection').style.display = 'block';
+    document.getElementById('toggleCartBtn').textContent = "❌ Close Cart";
+  }
+  renderCart();
+  
 
-  // ✅ Show message & scroll to cart
+  
   alert(`${title} added to cart`);
-  toggleCart();
+  const isHidden = cartSection.style.display === 'none' || cartSection.style.display === '';
+  if (isHidden) toggleCart();
 }
 
 function renderCart() {
   const cartBody = document.getElementById('cartBody');
   const totalItemsEl = document.getElementById('totalItems');
   const totalAmountEl = document.getElementById('totalAmount');
+  
 
   cartBody.innerHTML = '';
   let totalItems = 0;
@@ -197,25 +204,56 @@ function renderCart() {
 
   cart.forEach((item, index) => {
     const itemTotal = item.price * item.quantity;
-    const row = `
-      <tr>
-        <td>${index + 1}</td>
-        <td>${item.title}</td>
-        <td>₹ ${item.price.toFixed(2)}</td>
-        <td>${item.quantity}</td>
-        <td>₹ ${itemTotal.toFixed(2)}</td>
-        <td>
-          <button onclick="removeFromCart('${item.id}')" class="btn btn-sm btn-danger">🗑️</button>
-        </td>
-      </tr>
+
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${index + 1}</td>
+      <td>${item.title}</td>
+      <td>₹ ${item.price.toFixed(2)}</td>
+      <td>
+        <button class="btn btn-sm btn-secondary" onclick="updateQuantity('${item.id}', -1)">➖</button>
+        <span style="margin: 0 8px;">${item.quantity}</span>
+        <button class="btn btn-sm btn-secondary" onclick="updateQuantity('${item.id}', 1)">➕</button>
+      </td>
+      <td>₹ ${itemTotal.toFixed(2)}</td>
+      <td>
+        <button onclick="removeFromCart('${item.id}')" class="btn btn-sm btn-danger">🗑️</button>
+      </td>
     `;
-    cartBody.innerHTML += row;
+    cartBody.appendChild(row);
+
     totalItems += item.quantity;
     totalAmount += itemTotal;
   });
 
   totalItemsEl.textContent = totalItems;
   totalAmountEl.textContent = totalAmount.toFixed(2);
+  
+ensureCartVisibleIfItemsExist();
+
+
+
+
+
+
+}
+function updateQuantity(id, delta) {
+  const item = cart.find(p => p.id === id);
+  if (!item) return;
+
+  item.quantity += delta;
+
+
+  if (item.quantity < 1) {
+    if (confirm("Quantity is 0. Do you want to remove this item?")) {
+      cart = cart.filter(p => p.id !== id);
+    } else {
+      item.quantity = 1;
+    }
+  }
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart();
 }
 
 function removeFromCart(id) {
@@ -224,9 +262,41 @@ function removeFromCart(id) {
   renderCart(); // refresh UI
 }
 
+
+
+function ensureCartVisibleIfItemsExist() {
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+if (cart.length > 0) {
+document.getElementById('cartSection').style.display = 'block';
+document.getElementById('toggleCartBtn').textContent = "❌ Close Cart"; }
+}
+
+
+cart = JSON.parse(localStorage.getItem('cart')) || [];
 $(document).ready(() => {
-  cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
   renderCart();
   fillCategoryListUnderFilter();
   loadProductsToPage();
 });
+
+
+function clearCart() {
+  // Clear cart data from memory and localStorage
+  cart = [];
+  
+  localStorage.removeItem('cart');
+
+  // Clear cart UI
+  const cartBody = document.getElementById('cartBody');
+  const totalItemsEl = document.getElementById('totalItems');
+  const totalAmountEl = document.getElementById('totalAmount');
+  const cartSection = document.getElementById('cartSection');
+  const toggleBtn = document.getElementById('toggleCartBtn');
+
+  if (cartBody) cartBody.innerHTML = '';
+  if (totalItemsEl) totalItemsEl.textContent = '0';
+  if (totalAmountEl) totalAmountEl.textContent = '0.00';
+  if (cartSection) cartSection.style.display = 'none';
+  if (toggleBtn) toggleBtn.textContent = "🛒 View Cart";
+}

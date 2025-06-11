@@ -14,18 +14,24 @@ var getDbConnection =  async(userData, actionType, collectionName) => {
     await client.connect();
     var db = client.db(process.env.DATABASE_NAME);
     var collection = db.collection(collectionName);
+
+    let result;
     
     switch(actionType) {
         case 'find':
-            var result =  collection.find(userData).toArray();
+            result =  collection.find(userData).toArray();
             break;
         case 'insertOne':
-            var result =  collection.insertOne(userData);
+            result =  collection.insertOne(userData);
             console.log(result)
             break;
         case 'deleteOne':
-            var result =  collection.deleteOne(userData);
+            result =  collection.deleteOne(userData);
             break;
+            
+        default:
+            throw new Error(`Unsupported action type: ${actionType}`);
+
 
         
     }

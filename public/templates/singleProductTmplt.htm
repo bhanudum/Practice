@@ -1,3 +1,32 @@
+
+
+<div id="cartSection" style="display: none; margin-top: 20px;">
+  <h2>Cart Details Summary</h2>
+  
+<p><strong>Order ID:</strong> <span id="orderId"></span></p>
+  <p><strong>Order Date & Time:</strong> <span id="orderDateTime"> </span></p>
+
+  <table id="cartTable" border="3px" width="100%" display="table">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cartBody"></tbody>
+  </table>
+  <p><strong>Total Items:</strong> <span id="totalItems">0</span></p>
+  <p><strong>Total Price ₹:</strong> <span id="totalAmount">0.00</span></p>
+  
+
+  <button class="btn btn-success" onclick="placeOrder()">🧾 Place Order</button>
+
+  <button class="btn btn-danger" onclick="toggleCart()">Close Cart</button>
+</div>
 <div class="card" style="width: 18rem;">
   <img src="{{image}}" class="card-img-top" alt="Product image"  onerror="this.onerror=null; this.src='/images/defults.png'" >
   <div class="card-body">
@@ -29,22 +58,3 @@
 </div>
 
 
-<div id="cartSection" style="display: none; margin-top: 20px;">
-  <h2>Cart Details Summary</h2>
-  <table id="cartTable" border="3px" width="100%">
-    <thead>
-      <tr>
-        <th>S.No</th>
-        <th>Title</th>
-        <th>Price</th>
-        <th>Qty</th>
-        <th>Total</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody id="cartBody"></tbody>
-  </table>
-  <p><strong>Total Items:</strong> <span id="totalItems">0</span></p>
-  <p><strong>Total Price ₹:</strong> <span id="totalAmount">0.00</span></p>
-  <button class="btn btn-danger" onclick="toggleCart()">Close Cart</button>
-</div>

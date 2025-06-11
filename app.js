@@ -18,6 +18,12 @@ var addNewProductRouter = require("./routes/addNewProducDetails");
 var uploadResourceRouter = require("./routes/uploadFiles");
 var deleteProductRouter = require("./routes/deleteProduct");
 
+var mongoose = require('mongoose');
+var orderplaced = require("./routes/orderplaced");
+const orderslist = require("./routes/orderslist");
+var orderModel = require("./routes/orderModel");
+const { use } = require('react');
+
 
 
 app = express();
@@ -57,6 +63,13 @@ app.use('/upload/resource', uploadResourceRouter);
 app.use(express.static('public'));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 app.use('/delete/product', deleteProductRouter);
+app.use('/order/placed', orderplaced);
+app.use('/order/model', orderModel);
+app.use('/orders/list', orderslist);
+
+
+
+
 
 
 // catch 404 and forward to error handler
