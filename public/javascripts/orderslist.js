@@ -63,15 +63,62 @@ document.addEventListener("DOMContentLoaded", () => {
           ).join("");
 
           // Append order data into the box
+          const totalQty = order.cartItems.reduce((sum, item) => sum + item.quantity, 0);
+          const rawDate = new Date(order.orderDate);
+          const formattedDate = `${rawDate.getDate().toString().padStart(2, '0')}-${(rawDate.getMonth() + 1).toString().padStart(2, '0')}-${rawDate.getFullYear()} ${rawDate.getHours().toString().padStart(2, '0')}:${rawDate.getMinutes().toString().padStart(2, '0')}`;
+
+
+          // Build table rows for each item
+          const itemsRows = order.cartItems.map((item, index) => `
+            <tr>
+              <td>${index + 1}</td>
+              <td>${item.title}</td>
+              <td>${item.quantity}</td>
+              <td>₹${item.price.toFixed(2)}</td>
+              <td>₹${(item.quantity * item.price).toFixed(2)}</td>
+            </tr>
+          `).join("");
+
+          // Full HTML structure with table and summary
           orderBox.innerHTML = `
-            <div class="order-header">Order #${order.orderId}</div>
-            <div class="order-meta">Date: ${order.orderDate}</div>
-            <div class="order-meta">Total Amount: ₹${order.totalAmount}</div>
-            <div class="items-list">${items}</div>
+            <div class="d-flex justify-content-between mb-2">
+              <div class="order-header fs-5 text-primary fw-bold">Order Id: ${order.orderId}</div>
+              <div class="order-meta text-muted fw-bold">Date: ${formattedDate}</div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm">
+                <thead class="table-light">
+                  <tr>
+                    <th>S.No</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${itemsRows}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-start mt-3 flex-wrap">
+              <div class="summary text-start">
+                <div><strong>Total No of Products:</strong> ${order.cartItems.length}</div>
+                <div><strong>Total Quantity:</strong> ${totalQty}</div>
+                <div><strong>Total Amount:</strong> ₹${order.totalAmount}</div>
+              </div>
+
+              <div class="download text-end mt-3 mt-md-0">
+                <button class="btn btn-outline-primary" onclick="window.location.href='downloadinvoice.html?orderId=${order.orderId}'">Download Invoice</button>
+              </div>
+            </div>
           `;
 
           container.appendChild(orderBox);
         });
+      
       } else {
         container.innerHTML = "<div class='alert alert-warning'>No orders found.</div>";
       }
