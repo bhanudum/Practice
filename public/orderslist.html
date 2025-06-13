@@ -59,6 +59,7 @@
   <!-- Bootstrap and FontAwesome -->
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/orders.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <!-- Scripts -->
@@ -66,54 +67,59 @@
   <script src="lib/axios.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <style>
-    .order-box {
-      background: whitesmoke;
-      border: 2px solid gold;
-      border-radius: 10px;
-      padding: 15px 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .order-header {
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: #1e1af8;
-    }
-    .order-meta {
-      font-size: 1rem;
-      margin: 5px 0;
-      color: #555;
-    }
-    .items-list {
-      margin-top: 10px;
-      padding-left: 15px;
-      
-    }
-    .item-line {
-      font-size: 0.95rem;
-      color: #333;
-    }
-  </style>
+  
 </head>
 
 <body>
   <!-- Header -->
-  <header class="p-3 bg-dark text-white">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header class="p-3 bg-dark text-white header1">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      
+      <!-- Left: Logo + Nav -->
       <div class="d-flex align-items-center">
-        <img src="images/logo1.png" alt="Logo" class="pageLogo" style="height: 40px; margin-right: 10px;">
-        <span class="fs-4">ShopInHand</span>
+        
+        <img src="images/logo1.png" alt="Logo" class="pageLogo me-2" style="height: 40px;">
+        <span class="fs-4 me-4">ShopInHand</span>
+        <ul class="nav listbold">
+          <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>
       </div>
+
+      <!-- Right: Logout -->
       <button class="btn btn-outline-light" onclick="logoutUser()">Logout</button>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Orders Content -->
-  <main class="container my-5">
-    <h2 class="mb-4">Orders Details</h2>
+  <main class="container">
+    <a href="index.html#productDetails" class="btn btn-success mt-3 ">← Back</a>
+    <div class="oderdetails">
+    <h2 class="mb-4 text-center">Orders Details</h2>
+    <div class="row mb-3 align-items-end">
+  <div class="col-md-4">
+    <label for="orderIdSearch" class="form-label">Search by Order ID:</label>
+    <input type="text" id="orderIdSearch" class="form-control" placeholder="Enter Order ID">
+  </div>
+
+  <div class="col-md-4 offset-md-4">
+    <label class="form-label">Filter by Date:</label>
+    <div class="d-flex gap-2">
+      <input type="date" id="startDate" class="form-control" />
+      <input type="date" id="endDate" class="form-control" />
+    </div>
+  </div>
+  <div id="orderCount" class="countorder"></div>
+</div>
+
+
     <div id="ordersContainer"></div>
-    <a href="index.html" class="btn btn-success mt-3">← Back to Products</a>
+    </div>
   </main>
 
   <!-- Footer -->

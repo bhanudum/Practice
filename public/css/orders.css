@@ -1,0 +1,52 @@
+
+    .order-box {
+      background: whitesmoke;
+      border: 2px solid gold;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .order-header {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #1e1af8;
+    }
+    .order-meta {
+      font-size: 1rem;
+      margin: 5px 0;
+      color: #555;
+    }
+    .items-list {
+      margin-top: 10px;
+      padding-left: 15px;
+      
+    }
+    .item-line {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .rotate-icon {
+  transition: transform 0.3s ease;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.oderdetails{
+    
+    
+    background-color: white;
+   
+    box-shadow: 20px 30px 30px rgba(0,0,0,0.1);
+   
+}
+
+.countorder{
+    
+    color: block;
+    color: #bd2c08;
+    
+  
+}
+  
