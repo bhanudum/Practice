@@ -1,266 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Adda page</title>
-    <script src="lib/handlebar.js"></script>
-    <script src='lib/axios.js'></script>
-    <link rel="stylesheet" href="lib/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery.js"></script>
-    <script src="javascripts/productLoad.js"></script>
-    <script src="lib/capthcalib.js"></script>
-    <script src="javascripts/main.js"></script>
-    <script src="javascripts/login.js"></script>
-    <script src="lib/ratingStars_lib/rating.js"></script>
-    <link rel="stylesheet" href="lib/ratingStars_lib/rating.css">
-    <script src="javascripts/userSignup.js"></script>
-     <script src="javascripts/order.js"></script>
-     <script src="javascripts/orderslist.js"></script>
-     <script src="javascripts/currentdate.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Adda page</title>
+        <script src="lib/handlebar.js"></script>
+        <script src='lib/axios.js'></script>
+        <link rel="stylesheet"
+            href="lib/bootstrap-icons/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/jquery.js"></script>
+        <script src="javascripts/productLoad.js"></script>
+        <script src="lib/capthcalib.js"></script>
+        <script src="javascripts/main.js"></script>
+        <script src="javascripts/login.js"></script>
+        <script src="lib/ratingStars_lib/rating.js"></script>
+        <link rel="stylesheet" href="lib/ratingStars_lib/rating.css">
+        <script src="javascripts/userSignup.js"></script>
+        <script src="javascripts/order.js"></script>
+        <script src="javascripts/orderslist.js"></script>
+        <script src="javascripts/currentdate.js"></script>
+        <script src="javascripts/profile.js"></script>
 
-<body>
-    <div class="container-fluid">
-        <header class="p-3 bg-dark text-white header1">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                        <img src="images/logo1.png" alt="" class="pageLogo">
-                    </a>
-                    <span class="fs-4 text-white">ShopInHand</span>
-
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 listbold">
-                        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-                    </ul>
-
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 ">
-                        <input type="search" id="search" class="form-control form-control-dark search1" placeholder="Search..."
-                            aria-label="Search">
-                    </form>
-
-                    <div class="text-end">
-                        <div class="loggedinUser">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="logoutUser()">
-                                LOGOUT
-                            </button>
-                        </div>
-                        <div class="newUer">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">
-                                LOGIN
-                            </button>
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                data-bs-target="#signupModal">
-                                Signup
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <main>
-
-        </main>
-        
-
-        <footer class="container-fluid bg-light py-5 px-4 border-top  footer1">
-            <!-- 1. Service Slogan -->
-            <div class="row mb-4 text-center">
-                <div class="col">
-                    <h5 class="text-primary">Connecting Buyers and Sellers, One Click at a Time!</h5>
-                </div>
-                <div class="footer-quote text-center text-light fs-5 fw-semibold mt-4">
-                                Discover Deals, Find Needs — All at Your Fingertips.
-                </div>
-            </div>
-
-            <!-- 2. Navigation Links -->
-            <div class="row mb-4 text-center">
-                <div class="col">
-
-                    <ul class="nav justify-content-center flex-wrap text-bold on-overflow-auto">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- 3. Social Media Icons -->
-            <div class="row mb-4 text-center">
-                <div class="col">
-                    <h5>Follow Us</h5>
-                    <div class="d-flex justify-content-center gap-4 fs-4">
-                        <a href="https://facebook.com" target="_blank" class="text-secondary fs-4">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="text-secondary fs-4">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" class="text-secondary fs-4">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" class="text-secondary fs-4">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-
-                        <a href="https://youtube.com" target="_blank" class="text-secondary fs-4">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- 4. Copyright -->
-            <div class="row right-end-footer">
-                <div class="col text-right">
-                    <p class="text-body-secondary mb-0">© 2025 <strong>ShopInHand</strong>. All rights reserved.</p>
-                </div>
-            </div>
-
-        </footer>
-    </div>
-
-    <!-- Login popup-->
-    <div class="modal" tabindex="-1" id="loginModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Login</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="logincontrols">
-                        <li>
-                            <input id="userAccountId" type="text" class="form-control" placeholder="User Account Id">
-                        </li>
-                        <li>
-                            <input id="accountPassword" type="password" class="form-control"
-                                placeholder="Account Password">
-                        </li>
-                        <li>
-                            <input type="checkbox" id="rememberMeCheckbox" checked> Save My Credentials
-                        </li>
-                        <li class="row">
-                            <div class="captchaBlock col"></div>
-                            <i class="bi bi-arrow-clockwise col" onclick="addCapthcaText()"></i>
-                        </li>
-                        <li>
-                            <input id="captchaText" type="text" class="form-control" placeholder="Enter Captcha">
-                        </li>
-                        <li>
-                            <a class="alert-link newusersignupinlogin" href="#" onclick="showSignupModal()">
-                                Don't have an account? Sign up  
+        <body>
+            <div class="container-fluid">
+                <header class="p-3 bg-dark text-white header1">
+                    <div class="container">
+                        <div
+                            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                            <a href="/"
+                                class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                                <img src="images/logo1.png" alt
+                                    class="pageLogo">
                             </a>
-                        </li>
-                        <li id="statusMsg" class="text-danger" style="display: none;">
-                            
-                            
+                            <span class="fs-4 text-white">ShopInHand</span>
 
-                        </li>
-                        <li id="statusMsg1" class="text-success" style="display: none;">
-                           
+                            <ul
+                                class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 listbold">
+                                <li><a href="#"
+                                        class="nav-link px-2 text-white">Home</a></li>
+                                <li><a href="#"
+                                        class="nav-link px-2 text-white">Features</a></li>
+                                <li><a href="#"
+                                        class="nav-link px-2 text-white">Pricing</a></li>
+                                <li><a href="#"
+                                        class="nav-link px-2 text-white">FAQs</a></li>
+                                <li><a href="#"
+                                        class="nav-link px-2 text-white">About</a></li>
+                            </ul>
 
-                        </li>
+                            <form
+                                class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 ">
+                                <input type="search" id="search"
+                                    class="form-control form-control-dark search1"
+                                    placeholder="Search..."
+                                    aria-label="Search">
+                            </form>
 
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" onclick="validateUserCredentials()">Login</button>
+                            <div class="text-end">
+                                <div class="loggedinUser">
+                                    <button type="button"
+                                        class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        onclick="logoutUser()">
+                                        LOGOUT
+                                    </button>
+
+                                    <button class="btn btn-primary" id="hamburgerMenu" onclick="profile()">
+                                     <i class="fa fa-bars"></i> Profile
+                                    </button>
+
+                                    <div id="profileSidebar"
+                                        class="profile-sidebar d-none">
+                                        <div class="profile-content">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-3">
+                                                <h5 class="mb-0">👤 Profile</h5>
+                                                <button
+                                                    class="btn btn-sm btn-danger"
+                                                    onclick="profile()">❌</button>
+                                            </div>
+
+                                            <div
+                                                class="mb-2"><strong>Name:</strong>
+                                                <span
+                                                    id="userName">N/A</span></div>
+                                            <div
+                                                class="mb-2"><strong>Email:</strong>
+                                                <span
+                                                    id="userEmail">N/A</span></div>
+                                            <div
+                                                class="mb-2"><strong>Mobile:</strong>
+                                                <span
+                                                    id="userMobile">N/A</span></div>
+                                            <div
+                                                class="mb-3"><strong>Address:</strong>
+                                                <span
+                                                    id="userAddress">N/A</span></div>
+
+                                            <button
+                                                class="btn btn-outline-primary w-100 mb-2"
+                                                onclick="viewOrders()">📦
+                                                Orders</button>
+                                            <button
+                                                class="btn btn-outline-secondary w-100 mb-2"
+                                                onclick="viewAddress()">📍
+                                                Address</button>
+                                            <button class="btn btn-danger w-100"
+                                                onclick="logoutUser()">🔓
+                                                Logout</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="newUser">
+                                    <button type="button"
+                                        class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#loginModal">
+                                        LOGIN
+                                    </button>
+
+                                    <button type="button"
+                                        class="btn btn-success"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#signupModal">
+                                        Signup
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <main>
+
+                </main>
+
+                <footer
+                    class="container-fluid bg-light py-5 px-4 border-top  footer1">
+                    <!-- 1. Service Slogan -->
+                    <div class="row mb-4 text-center">
+                        <div class="col">
+                            <h5 class="text-primary">Connecting Buyers and
+                                Sellers, One Click at a Time!</h5>
+                        </div>
+                        <div
+                            class="footer-quote text-center text-light fs-5 fw-semibold mt-4">
+                            Discover Deals, Find Needs — All at Your Fingertips.
+                        </div>
+                    </div>
+
+                    <!-- 2. Navigation Links -->
+                    <div class="row mb-4 text-center">
+                        <div class="col">
+
+                            <ul
+                                class="nav justify-content-center flex-wrap text-bold on-overflow-auto">
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link px-2 text-white">Home</a></li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link px-2 text-white">Features</a></li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link px-2 text-white">Pricing</a></li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link px-2 text-white">FAQs</a></li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link px-2 text-white">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 3. Social Media Icons -->
+                    <div class="row mb-4 text-center">
+                        <div class="col">
+                            <h5>Follow Us</h5>
+                            <div
+                                class="d-flex justify-content-center gap-4 fs-4">
+                                <a href="https://facebook.com" target="_blank"
+                                    class="text-secondary fs-4">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank"
+                                    class="text-secondary fs-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank"
+                                    class="text-secondary fs-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank"
+                                    class="text-secondary fs-4">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                                <a href="https://youtube.com" target="_blank"
+                                    class="text-secondary fs-4">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Copyright -->
+                    <div class="row right-end-footer">
+                        <div class="col text-right">
+                            <p class="text-body-secondary mb-0">© 2025
+                                <strong>ShopInHand</strong>. All rights
+                                reserved.</p>
+                        </div>
+                    </div>
+
+                </footer>
+            </div>
+
+            <!-- Login popup-->
+            <div class="modal" tabindex="-1" id="loginModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Login</h5>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="logincontrols">
+                                <li>
+                                    <input id="userAccountId" type="text"
+                                        class="form-control"
+                                        placeholder="User Account Id">
+                                </li>
+                                <li>
+                                    <input id="accountPassword" type="password"
+                                        class="form-control"
+                                        placeholder="Account Password">
+                                </li>
+                                <li>
+                                    <input type="checkbox"
+                                        id="rememberMeCheckbox" checked> Save My
+                                    Credentials
+                                </li>
+                                <li class="row">
+                                    <div class="captchaBlock col"></div>
+                                    <i class="bi bi-arrow-clockwise col"
+                                        onclick="addCapthcaText()"></i>
+                                </li>
+                                <li>
+                                    <input id="captchaText" type="text"
+                                        class="form-control"
+                                        placeholder="Enter Captcha">
+                                </li>
+                                <li>
+                                    <a class="alert-link newusersignupinlogin"
+                                        href="#" onclick="showSignupModal()">
+                                        Don't have an account? Sign up
+                                    </a>
+                                </li>
+                                <li id="statusMsg" class="text-danger"
+                                    style="display: none;">
+
+                                </li>
+                                <li id="statusMsg1" class="text-success"
+                                    style="display: none;">
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary"
+                                onclick="validateUserCredentials()">Login</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Signup Modal-->
-    <div class="modal" tabindex="-1" id="signupModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">New user signup into application</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="signupModal">
-                        <li class="mb-3">
-                            <input type="text" class="form-control" id="s_accountId" maxlength="20"
-                                pattern="^[A-Za-z0-9]+$" placeholder="Account Id" required>
-                         </li>
-                        <li class="mb-3">
-                            <input type="password" class="form-control" id="s_password" placeholder="Account Password"
-                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$"
-                                title="8–20 characters with uppercase, lowercase, number, and special character"
-                                required="required">
-                        </li>
-                        <li class="mb-3">
-                            <input type="password" class="form-control" id="s_rpassword"
-                                placeholder="Re-enter Account Password">
-                        </li>
-                        <li class="mb-3">
-                            <input type="email" class="form-control" id="accountMailid" placeholder="Email Address"
-                                required="required">
-                        </li>
-                        <li class="mb-3">
-                            <input type="number" class="form-control" placeholder="Mobile Number" id="s_mobilenumber"
-                                required="required">
-                        </li>
-                        <li class="mb-3">
-                            <label for="dob" class="form-label">Date of Birth</label>
-                            <input type="date" class="form-control" id="s_dob" required>
-                        </li>
-                       
-                        <li class="mb-3">
-                            <label class="form-label d-block">Gender:</label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="s_genderMale" value="Male"
-                                    required>
-                                <label class="form-check-label" for="genderMale">Male</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="s_genderFemale"
-                                    value="Female">
-                                <label class="form-check-label" for="genderFemale">Female</label>
-                            </div>
-                        </li>
+            <!-- Signup Modal-->
+            <div class="modal" tabindex="-1" id="signupModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">New user signup into
+                                application</h5>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="signupModal">
+                                <li class="mb-3">
+                                    <input type="text" class="form-control"
+                                        id="s_accountId" maxlength="20"
+                                        pattern="^[A-Za-z0-9]+$"
+                                        placeholder="Account Id" required>
+                                </li>
+                                <li class="mb-3">
+                                    <input type="password" class="form-control"
+                                        id="s_password"
+                                        placeholder="Account Password"
+                                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$"
+                                        title="8–20 characters with uppercase, lowercase, number, and special character"
+                                        required="required">
+                                </li>
+                                <li class="mb-3">
+                                    <input type="password" class="form-control"
+                                        id="s_rpassword"
+                                        placeholder="Re-enter Account Password">
+                                </li>
+                                <li class="mb-3">
+                                    <input type="email" class="form-control"
+                                        id="accountMailid"
+                                        placeholder="Email Address"
+                                        required="required">
+                                </li>
+                                <li class="mb-3">
+                                    <input type="number" class="form-control"
+                                        placeholder="Mobile Number"
+                                        id="s_mobilenumber"
+                                        required="required">
+                                </li>
+                                <li class="mb-3">
+                                    <label for="dob" class="form-label">Date of
+                                        Birth</label>
+                                    <input type="date" class="form-control"
+                                        id="s_dob" required>
+                                </li>
 
-                        <li class="mb-3">
-                            
-                            <input type="text" class="form-control" id="s_address" maxlength="250"
-                                placeholder="Address (max 250 characters)" required>
-                        </li>
+                                <li class="mb-3">
+                                    <label
+                                        class="form-label d-block">Gender:</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input"
+                                            type="radio" name="gender"
+                                            id="s_genderMale" value="Male"
+                                            required>
+                                        <label class="form-check-label"
+                                            for="genderMale">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input"
+                                            type="radio" name="gender"
+                                            id="s_genderFemale"
+                                            value="Female">
+                                        <label class="form-check-label"
+                                            for="genderFemale">Female</label>
+                                    </div>
+                                </li>
 
-                        
-                        <li id="signupMsg" style="display: none;">
-                            <span></span>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#loginModal">
-                                LOGIN
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" onclick="doUserSignup()">Signup</button>
+                                <li class="mb-3">
+
+                                    <input type="text" class="form-control"
+                                        id="s_address" maxlength="250"
+                                        placeholder="Address (max 250 characters)"
+                                        required>
+                                </li>
+
+                                <li id="signupMsg" style="display: none;">
+                                    <span></span>
+                                    <button type="button"
+                                        class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#loginModal">
+                                        LOGIN
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary"
+                                onclick="doUserSignup()">Signup</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</body>
+        </body>
 
-</html>
+    </html>

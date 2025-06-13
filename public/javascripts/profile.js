@@ -1,10 +1,12 @@
 
 function profile() {
-    {
   const sidebar = document.getElementById("profileSidebar");
   const isHidden = sidebar.classList.contains("d-none");
+
+  // Toggle visibility
   sidebar.classList.toggle("d-none", !isHidden);
 
+  // Load user data only when showing the profile
   if (isHidden) {
     document.getElementById("userName").textContent = localStorage.getItem('user_name') || "N/A";
     document.getElementById("userEmail").textContent = localStorage.getItem('user_email') || "N/A";
@@ -23,4 +25,3 @@ function viewAddress() {
 
 
 
-}
