@@ -7,13 +7,18 @@ function placeOrder() {
   }
 
   const totalAmount = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
-
+  const accountId = sessionStorage.getItem('accountId');
+  if (!accountId) {
+    alert("You need to be logged in to place an order.");
+    return;
+  }
   const orderPayload = {
     cartItems,
-    totalAmount
+    totalAmount,
+    accountId
   };
 
-  axios.post('/order/placed', orderPayload)
+  axios.post('/order/placed/', orderPayload)
     .then(response => {
       if (response.data.msg === 'success') {
         alert(`✅ Order placed successfully! Your Order ID is ${response.data.orderId}`);

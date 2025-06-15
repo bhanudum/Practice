@@ -6,11 +6,16 @@ const dbUtils = require('./common/dbUtility');
 
 router.get('/', async (req, res) => {
   try {
-    // Fetch all orders from the 'orderlist' collection, latest first
-    const orders = await dbUtils.doDbCommunication({}, 'find', 'orderlist');
+    const { accountId } = req.query;
+    if (!accountId) {
+      return res.status(400).json({ msg: 'Missing accountId in query' });
+    }
 
-    // Send back the orders
+    const orders = await dbUtils.doDbCommunication({ "user.accountId": accountId }, 
+      'find','orderlist');
+      
     res.json({ msg: 'success', orders });
+
   } catch (error) {
     console.error('Error fetching orders:', error);
     res.status(500).json({ msg: 'error', error: error.message });

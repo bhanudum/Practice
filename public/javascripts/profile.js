@@ -8,10 +8,12 @@ function profile() {
 
   // Load user data only when showing the profile
   if (isHidden) {
-    document.getElementById("userName").textContent = localStorage.getItem('user_name') || "N/A";
-    document.getElementById("userEmail").textContent = localStorage.getItem('user_email') || "N/A";
-    document.getElementById("userMobile").textContent = localStorage.getItem('user_mobile') || "N/A";
-    document.getElementById("userAddress").textContent = localStorage.getItem('user_address') || "N/A";
+   document.getElementById('userName').textContent = sessionStorage.getItem('accountId') || 'N/A';
+    document.getElementById('userEmail').textContent = sessionStorage.getItem('userEmail') || 'N/A';
+    document.getElementById('userMobile').textContent = sessionStorage.getItem('userMobile') || 'N/A';
+    document.getElementById('userAddress').textContent = sessionStorage.getItem('userAddress') || 'N/A';
+    document.getElementById('userDOB').textContent = sessionStorage.getItem('userDOB') || 'N/A';
+    document.getElementById('userId').textContent = sessionStorage.getItem('userId') || 'N/A';
   }
 }
 

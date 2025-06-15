@@ -21,6 +21,7 @@
     <script src="javascripts/userSignup.js"></script>
         <link rel="stylesheet" href="css/addNewProduct.css">
         <script src="javascripts/addNewProduct.js"></script>
+        <script src="javascripts/logoutUser.js"></script>
         
 
     <body>
@@ -41,33 +42,28 @@
                         <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
                         <li><a href="#" class="nav-link px-2 text-white">About</a></li>
                         </ul>
-
+                       <div class="d-flex gap-4 align-items-center">
                         <h1 class="pageTitle">ADD NEW PRODUCTS </h1>
+                        <div class="text-end"> 
+                            <input class="logout-btn" type="button" onclick="logoutUser()" value="Logout">
+                        </div></div>
 
-                        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-                        </form> -->
+                        
 
-                        <!-- <div class="text-end">
+                         <div class="text-end">
                             <div class="loggedinUser">
                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="logoutUser()" >
                                     LOGOUT
                                 </button>
                             </div>
-                            <div class="newUer">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                    LOGIN
-                                </button>
-                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupModal">
-                                    Signup
-                                </button>
-                            </div> -->
+                            
                         </div>
                     </div>
                 </div>
             </header>
 
             <main class="addNewProductDetails">
+                <a href="index.html#productDetails" class="btn btn-success mt-3 ">← Back</a>
                 <ul>
                     <li class="title">
                         Add new product Details

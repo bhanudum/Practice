@@ -1,7 +1,7 @@
 
 const express = require('express');
 const router = express.Router();
-const dbUtils = require('./common/dbUtility'); // Adjust path if needed
+const dbUtils = require('./common/dbUtility'); 
 
 // Generate Order ID (001, 002, ...)
 async function generateOrderId() {
@@ -18,11 +18,28 @@ router.post('/', async (req, res) => {
     const orderId = await generateOrderId();
     const orderDate = new Date().toISOString().replace('T', ' ').substring(0, 19);
 
-    const orderDetails = {
-      orderId,
-      orderDate,
-      cartItems,
-      totalAmount
+    const accountId = req.session.accountId || req.body.accountId;
+    const users = await dbUtils.doDbCommunication({ accountId }, 'find', 'userAccountDetails');
+
+    if (!users.length) {
+      return res.status(404).json({ msg: 'error', error: 'User not found' });
+    }
+
+    const user = users[0];
+
+const orderDetails = {
+  orderId,
+  orderDate,
+  cartItems,
+  totalAmount,
+  user: {
+    userId: user._id,
+    accountId: user.accountId,
+    dob: user.dob,
+    email: user.mailId || 'N/A',
+    mobile: user.mobileNumber || 'N/A',
+    address: user.address || 'N/A'
+  }
     };
 
     const result = await dbUtils.doDbCommunication(orderDetails, 'insertOne', 'orderlist');

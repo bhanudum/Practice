@@ -1,9 +1,10 @@
 <div class="main-wrapper" id="productDetailsContainerRow">
     <div class="FilterContainer">
         <div>
-            <button class="deleteProduct" onclick="location.href='orderslist.html'">
-                Order History
-            </button>
+             <button class="btn btn-outline-primary w-100 mb-2"
+                                                onclick="location.href='orderslist.html'">📦
+                                                View Orders</button>
+            
             </br>
             <span class="filterTitle ">Filter</span>
 
@@ -18,13 +19,13 @@
 
 
         <div id="categoryList" class="category-list">
-
+            <div class="d-flex gap-2 filter-buttons">
             <button class="btn btn-primary" onclick="applyFilter()">
                 Apply Filter
             </button>
 
             <button class="btn btn-secondary" onclick="clearFilter()">
-                Clear Filter </button>
+                Clear Filter </button></div>
 
             
         </div>
@@ -53,12 +54,13 @@
 
         <p class="fw-bold">Total Products: <span id="totalProducts"> </span></p>
         <p class="fw-bold">Total Price ₹ <span id="totalPrice"> </span></p>
+        <div class="d-flex gap-2">
         <button class="AddProduct" onclick="location.href='addNewProduct.html'">
-                Add New Product
+                <i class="fas fa-plus me-1"></i>Add New Product
             </button>
             <button class="deleteProduct" onclick="location.href='deleteProduct.html'">
-                Delete Product
-            </button>
+                <i class="fas fa-trash-alt me-1"></i>Delete Product
+            </button> </div>
             <button class="btn btn-warning mt-3" id="toggleCartBtn" onclick="toggleCart()">🛒 View Cart</button>
        
     </div>

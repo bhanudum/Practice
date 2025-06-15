@@ -31,10 +31,10 @@ var loadSeletedPage = (pageType) => {
     let templateUrl = '';
 
     if (pageType === 'onload') {
-        $(".newUer").show(); 
+        $(".newUser").show(); 
         $(".loggedinUser").hide();
     } else {
-        $(".newUer").hide(); 
+        $(".newUser").hide(); 
         $(".loggedinUser").show();
     }
 
@@ -62,10 +62,4 @@ var loadSeletedPage = (pageType) => {
     });
 };
 
-var logoutUser = () => {
-    axios.get("/destroy/userSession").then(() => {
-        loadSeletedPage('onload');
-    }).catch(err => {
-        console.error("Logout failed:", err);
-    });
-};
+

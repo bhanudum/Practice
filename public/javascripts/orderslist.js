@@ -7,7 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (startDateInput) startDateInput.max = today;
   if (endDateInput) endDateInput.max = today;
 
-  axios.get('/orders/list')
+  const accountId = sessionStorage.getItem('accountId');
+if (!accountId) {
+  alert('You must be logged in to view orders.');
+  return;
+}
+
+  axios.get(`/orders/list?accountId=${encodeURIComponent(accountId)}`)
     .then(response => {
       allOrders = response.data.orders || [];
       renderOrders(allOrders);
@@ -72,7 +78,9 @@ function renderOrders(orders) {
 
 
       // Build table rows for each item
+      
       const itemsRows = order.cartItems.map((item, index) => `
+      
             <tr>
               <td>${index + 1}</td>
               <td>${item.title}</td>
@@ -81,21 +89,35 @@ function renderOrders(orders) {
               <td>₹${(item.quantity * item.price).toFixed(2)}</td>
             </tr>
           `).join("");
+          
 
       // Full HTML structure with table and summary
       const header = document.createElement("div");
+      
       header.className = "d-flex justify-content-between mb-2 order-toggle-header cursor-pointer";
+     
       header.innerHTML = `
-            <div class="order-header fs-5 text-primary fw-bold">Order Id: ${order.orderId}</div>
-            <div class="order-meta text-muted fw-bold">Order Date: ${formattedDate}</div>
-            <div><strong>Total Amount:</strong> ₹${order.totalAmount}</div>
-
+                     
+              <div class="order-header fs-5 text-primary fw-bold">Order Id: ${order.orderId}</div>
+              <div class="order-meta text-primary fw-bold">Order Date: ${formattedDate}</div>
+              
+              <div class="text-primary fw-bold"><strong>Total Amount:</strong>  ₹${order.totalAmount}</div> 
+            
                 <i class="fa-solid fa-chevron-down rotate-icon"></i>
+             
+                
           `;
+          
 
       const collapsibleContent = document.createElement("div");
       collapsibleContent.className = "collapsible-content";
       collapsibleContent.innerHTML = `
+      <div class="user-info bg-light p-2 rounded border mb-2">
+                     <div><strong>Name:</strong> ${order.user?.accountId || 'N/A'}</div>
+                     <div><strong>Email:</strong> ${order.user?.email || 'N/A'}</div>
+                     <div><strong>Mobile:</strong> ${order.user?.mobile || 'N/A'}</div>
+                     <div><strong>Address:</strong> ${order.user?.address || 'N/A'}</div>
+                </div>
 
             <div class="table-responsive">
               <table class="table table-bordered table-sm">
@@ -118,7 +140,8 @@ function renderOrders(orders) {
               <div class="summary text-start">
                 <div><strong>Total No of Products:</strong> ${order.cartItems.length}</div>
                 <div><strong>Total Quantity:</strong> ${totalQty}</div>
-                <div><strong>Total Amount:</strong> ₹${order.totalAmount}</div>
+                <div class="totalamount"><strong>Total Amount:</strong> ₹${order.totalAmount}</div>
+                
               </div>
 
               <div class="download text-end mt-3 mt-md-0">
@@ -152,10 +175,11 @@ function renderOrders(orders) {
   }
 }
 
-
-
-
-function logoutUser() {
-  localStorage.clear();
-  window.location.href = "index.html"; // Adjust if needed
+function logoutUser(){
+  window.Location="index.html"
 }
+
+
+
+
+

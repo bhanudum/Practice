@@ -188,18 +188,22 @@
     /* gap: 8px; */
 }
 
-.profile-content{
 
-    color:black;
-    border: 2px solid #e6f0af;
+
+.profile-content {
+    color: black;
+    
     border-radius: 5%;
     padding: 10px;
+    word-wrap: break-word;      
+    overflow-wrap: break-word;  
+    width: 100%;                
+    box-sizing: border-box;     
+}
 
-}  
-    
-    .profile-sidebar {
-    position: absolute;
-    top: 80px; /* adjust to be below the header */
+.profile-sidebar {
+    position: fixed;
+    top: 80px;
     right: 20px;
     width: 300px;
     background-color: #fff;
@@ -207,16 +211,125 @@
     border-radius: 8px;
     z-index: 1000;
     padding: 20px;
-    max-height: auto;
+    max-height: 80vh;           
     overflow-y: auto;
+    text-align: left;
+    box-sizing: border-box;
 }
 
+@media (max-width: 500px) {
+  .profile-sidebar {
+    width: 90%;
+    right: 5%;
+    top: 60px;
+  }
+}
+
+.profile-sidebar span {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+    
+ .totalamount{
+    color: #bd2c08;
+    font-weight: bold;
+ }   
 
 
 .d-none {
     display: none !important;
 }
 
+
+.AddProduct, 
+.deleteProduct {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Product: Primary style */
+.AddProduct {
+    background-color: #494cfa;
+    color: white;
+}
+
+.AddProduct:hover {
+    background-color: green;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+    
+   
+    transform: translateY(3px);
+}
+
+/* Delete Product: Danger style */
+.deleteProduct {
+    background-color: grey;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.deleteProduct:hover {
+    background-color: #eb3b4c;
+    color: white    ;
+    transform: translateY(-1px);
+}
+
+
+
+.logout-btn {
+     background-color: blue;
+    color: white;
+    transform: translateY(-3px);
+    border-radius: 10px;
+
+}
+
+.logout-btn:hover{
+    background-color: #eb3b4c;
+    color: white    ;
+    transform: translateY(-1px);
+    border-radius: 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 12px; /* spacing between buttons */
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons .btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-buttons .btn-primary {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.filter-buttons .btn-primary:hover {
+  background-color: rgb(17, 209, 65);
+
+}
+.filter-buttons .btn-secondary:hover {
+  background-color: rgb(231, 92, 11);
+  
+}
 
 
 

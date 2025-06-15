@@ -19,7 +19,9 @@ var uploadResourceRouter = require("./routes/uploadFiles");
 var deleteProductRouter = require("./routes/deleteProduct");
 
 var mongoose = require('mongoose');
+
 var orderplaced = require("./routes/orderplaced");
+
 const orderslist = require("./routes/orderslist");
 var orderModel = require("./routes/orderModel");
 const { use } = require('react');
@@ -63,7 +65,11 @@ app.use('/upload/resource', uploadResourceRouter);
 app.use(express.static('public'));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 app.use('/delete/product', deleteProductRouter);
-app.use('/order/placed', orderplaced);
+
+
+//app.use('/order/placed', orderplaced);
+app.use('/order/placed', require('./routes/orderplaced'));
+
 app.use('/order/model', orderModel);
 app.use('/orders/list', orderslist);
 
