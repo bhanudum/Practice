@@ -9,6 +9,11 @@ console.log("frm signup")
 router.post('/', async (req, res) => {
     var resObj = {};
     var userAccountDetails = req.body;
+    // Validation for required fields
+    if (!userAccountDetails.email || !userAccountDetails.password || !userAccountDetails.mobile) {
+        resObj.msg = 'Email, password, and mobile are required';
+        return res.send(JSON.stringify(resObj));
+    }
     try {
         // Check for existing email or mobile number
         const duplicateUser = await dbUtils.doDbCommunication({
